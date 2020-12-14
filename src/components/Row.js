@@ -1,13 +1,8 @@
 import react from "react";
+import Inputs from "./Inputs";
 const Row = () => (
 	<>
-		<tr>
-			<td>Icon1</td>
-			<td>Icon2</td>
-			<td>Description</td>
-			<td>Price</td>
-			<td>Bought?</td>
-		</tr>
+		<Inputs />
 	</>
 );
 

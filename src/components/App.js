@@ -11,19 +11,24 @@ const App = () => (
 		<h2>"Budget Here"</h2>
 
 		<table>
-			<tr>
-				<th></th>
-				<th></th>
-				<th>Description</th>
-				<th>Price</th>
-				<th>Bought?</th>
-			</tr>
+			<thead>
+				<tr>
+					<th></th>
+					<th></th>
+					<th>Description</th>
+					<th>Price</th>
+					<th>Bought?</th>
+				</tr>
+			</thead>
 
 			{/* Stick a row component here */}
 			<Row />
+			<tfoot>
+				<tr>
+					<td>Total Goes Here</td>
+				</tr>
+			</tfoot>
 		</table>
-
-		<h2>Total Goes Here</h2>
 	</>
 );
 
