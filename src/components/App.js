@@ -1,5 +1,6 @@
 import Friend from "./Friend";
 import Row from "./Row";
+import Gift from "./Gift";
 const App = () => (
 	<>
 		<nav>
