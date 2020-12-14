@@ -6,7 +6,7 @@ class Gift extends Component {
 		super(props);
 
 		this.state = {
-			item_name: "",
+			item_name: "Your gift here",
 			price: 0.0,
 			bought: false,
 		};
@@ -28,22 +28,29 @@ class Gift extends Component {
 
 	render() {
 		let { item_name, price, bought } = this.state;
+
 		return (
-			<>
-				<Inputs
-					label="Gift Name"
-					value={item_name}
-					type="text"
-					onChange={this.handleGiftName}
-				/>
-				<Inputs
-					label="Price"
-					value={price}
-					type="text"
-					onChange={this.handlePrice}
-				/>
-				<Inputs label="Bought" type="checkbox" onChange={this.handleBought} />
-			</>
+			<tbody>
+				<tr>
+					<Inputs
+						label="Gift Name"
+						value={item_name}
+						checkbox={false}
+						handleChange={this.handleGiftName}
+					/>
+					<Inputs
+						label="Price"
+						value={price}
+						checkbox={false}
+						handleChange={this.handlePrice}
+					/>
+					<Inputs
+						label="Bought"
+						checkbox={true}
+						handleChange={this.handleBought}
+					/>
+				</tr>
+			</tbody>
 		);
 	}
 }
