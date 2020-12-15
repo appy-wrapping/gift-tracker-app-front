@@ -1,7 +1,14 @@
-// import initial from "./initial";
-
 const reducer = (state, action) => {
-    return state;
-}
+	switch (action.type) {
+		case "REMOVE_GIFT":
+			return {
+				...state,
+				gifts: state.gifts.filter((gift) => gift.id !== action.payload),
+			};
+
+		default:
+			return state;
+	}
+};
 
 export default reducer;
