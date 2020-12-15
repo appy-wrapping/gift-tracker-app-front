@@ -1,6 +1,18 @@
+td.tableInputs {
+    background-color: white;
+}
+
+td.tableButtons {
+    background-color: var(--lightBlue);
+}
+
+th {
+    background-color: var(--lightBlue);
+}
+
 table {
     margin: auto;
-    empty-cells: show;
+    /* empty-cells: show; */
     background-color: var(--lightBlue);
     border: 1rem solid var(--lightBlue);
 }

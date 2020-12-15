@@ -1,0 +1,15 @@
+.card {
+    padding: 0.5rem 2rem;
+    width: 30%;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+}
+
+.budgetCard {
+    background-color: var(--green);
+}
+
+.friendCard {
+    background-color: var(--yellow);
+}

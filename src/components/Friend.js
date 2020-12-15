@@ -1,7 +1,7 @@
 // import react from "react";
 const Friend = ({ friendName }) => (
 	<>
-		<h2 className="friendCard">{friendName}</h2>
+		<h2 className="card friendCard">{friendName}</h2>
 	</>
 );
 
