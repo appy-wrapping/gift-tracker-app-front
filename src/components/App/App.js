@@ -17,9 +17,9 @@ const App = ({ gifts }) => (
 				<tr>
 					<th></th>
 					<th></th>
-					<th>Description</th>
-					<th>Price</th>
-					<th>Bought?</th>
+					<th><h2>Description</h2></th>
+					<th><h2>Price</h2></th>
+					<th><h2>Bought?</h2></th>
 				</tr>
 			</thead>
 
@@ -32,7 +32,7 @@ const App = ({ gifts }) => (
 
 			<tfoot>
 				<tr>
-					<td>Total Goes Here</td>
+					<td><h2>Total Goes Here</h2></td>
 				</tr>
 			</tfoot>
 		</table>
