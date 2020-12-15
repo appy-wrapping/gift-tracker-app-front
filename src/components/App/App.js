@@ -14,30 +14,33 @@ const App = ({ gifts }) => (
 			<h2 className="card budgetCard">"Budget Here"</h2>
 		</div>
 
-		<table>
-			<thead>
-				<tr>
-					<th></th>
-					<th></th>
-					<th><h3>Description</h3></th>
-					<th><h3>Price</h3></th>
-					<th><h3>Bought?</h3></th>
-				</tr>
-			</thead>
+		<article className="table">
+			<table>
+				<thead>
+					<tr>
+						<th></th>
+						<th></th>
+						<th><h3>Description</h3></th>
+						<th><h3>Price</h3></th>
+						<th><h3>Bought?</h3></th>
+					</tr>
+				</thead>
 
-			{/* Stick a row component here */}
-			<tbody>
-				{
-					gifts.map((gift, i) => <Gift gift={gift} key={i} />)
-				}
-			</tbody>
 
-			<tfoot>
-				<tr>
-					<td><h2>Total Goes Here</h2></td>
-				</tr>
-			</tfoot>
-		</table>
+				{/* Stick a row component here */}
+				<tbody>
+					{
+						gifts.map((gift, i) => <Gift gift={gift} key={i} />)
+					}
+				</tbody>
+
+				<tfoot>
+					<tr>
+						<td colSpan="5"><h2>Total Goes Here</h2></td>
+					</tr>
+				</tfoot>
+			</table>
+		</article>
 	</section>
 );
 

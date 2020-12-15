@@ -3,8 +3,8 @@
 
 const Row = ({ item_name, price, bought }) => (
 	<>
-		<td class="tableButtons"><button>X</button></td>
-		<td class="tableButtons"><button>/</button></td>
+		<td><button class="tableButtons">X</button></td>
+		<td><button class="tableButtons">/</button></td>
 		<td class="tableInputs">{item_name}</td>
 		<td class="tableInputs">{price}</td>
 		<td class="tableInputs">{bought ? "Y" : "N"}</td>

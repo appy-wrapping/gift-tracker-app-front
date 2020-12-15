@@ -6,6 +6,7 @@ h1 {
     font-weight: 500;
     font-size: 4rem;
     color: var(--darkBlue);
+    margin-bottom: 1rem;
 }
 
 h2 {

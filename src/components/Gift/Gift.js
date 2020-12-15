@@ -33,7 +33,7 @@ class Gift extends Component {
 		let { item_name, price, bought } = this.state;
 
 		return (
-			<tr>
+			<tr className="tableRow">
 				{this.state.editing ?
 					<Editing
 						item_name={item_name}
