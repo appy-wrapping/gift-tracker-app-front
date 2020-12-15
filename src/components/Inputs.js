@@ -1,19 +1,18 @@
-import Gift from "./Gift";
-const Inputs = ({ handleChange, handleBought, value, type, checkbox }) => (
-	<tbody>
-		<tr>
-			<td>icon1</td>
-			<td>icon2</td>
-			<td>
-				<input type={type} value={value} onChange={handleChange} />
-			</td>
-			<td>
-				<input type={type} value={value} onChange={handleChange} />
-			</td>
-			<td>
-				<input type="checkbox" value={value} onClick={handleBought} />
-			</td>
-		</tr>
-	</tbody>
+// import Gift from "./Gift";
+const Inputs = ({ handleChange, value, type, checkbox }) => (
+
+	<td>
+		{!checkbox ?
+			<input
+				type="text"
+				value={value}
+				onChange={handleChange} /> :
+			<input
+				type="checkbox"
+				onChange={handleChange}
+			/>}
+	</td>
+
+
 );
 export default Inputs;

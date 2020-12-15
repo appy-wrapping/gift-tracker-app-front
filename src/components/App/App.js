@@ -1,7 +1,8 @@
-import Friend from "./Friend";
-import Row from "./Row";
-import Gift from "./Gift";
-const App = () => (
+import Friend from "../Friend";
+
+import Gift from "../Gift/Gift";
+
+const App = ({ gifts }) => (
 	<>
 		<nav>
 			<h1>Gift Tracker App</h1>
@@ -23,7 +24,12 @@ const App = () => (
 			</thead>
 
 			{/* Stick a row component here */}
-			<Row />
+			<tbody>
+				{
+					gifts.map((gift, i) => <Gift gift={gift} key={i} />)
+				}
+			</tbody>
+
 			<tfoot>
 				<tr>
 					<td>Total Goes Here</td>
