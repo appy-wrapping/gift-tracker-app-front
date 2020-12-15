@@ -23,7 +23,10 @@ const App = () => (
 			</thead>
 
 			{/* Stick a row component here */}
-			<Gift />
+			<tbody>
+				<Gift />
+			</tbody>
+
 			<tfoot>
 				<tr>
 					<td>Total Goes Here</td>

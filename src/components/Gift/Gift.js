@@ -1,14 +1,17 @@
 import { Component } from "react";
-import Inputs from "./Inputs";
+import Inputs from "../Inputs";
+import Row from "../Row";
+import Editing from "../Editing";
 
 class Gift extends Component {
 	constructor(props) {
 		super(props);
 
 		this.state = {
-			item_name: "Your gift here",
-			price: 0.0,
-			bought: false,
+			item_name: props.item_name,
+			price: 0.0, //edit
+			bought: false, //edit
+			editing: false,
 		};
 		this.handleGiftName = this.handleGiftName.bind(this);
 		this.handlePrice = this.handlePrice.bind(this);
@@ -30,27 +33,26 @@ class Gift extends Component {
 		let { item_name, price, bought } = this.state;
 
 		return (
-			<tbody>
-				<tr>
-					<Inputs
-						label="Gift Name"
-						value={item_name}
-						checkbox={false}
-						handleChange={this.handleGiftName}
+			<tr>
+				{this.state.editing ?
+					<Editing
+						item_name={item_name}
+						price={price}
+						bought={bought}
+						handleGiftName={this.handleGiftName}
+						handlePrice={this.handlePrice}
+						handleBought={this.handleBought}
 					/>
-					<Inputs
-						label="Price"
-						value={price}
-						checkbox={false}
-						handleChange={this.handlePrice}
+					:
+					<Row
+						item_name={item_name}
+						price={price}
+						bought={false}
 					/>
-					<Inputs
-						label="Bought"
-						checkbox={true}
-						handleChange={this.handleBought}
-					/>
-				</tr>
-			</tbody>
+				}
+
+			</tr>
+
 		);
 	}
 }
