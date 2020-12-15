@@ -1,9 +1,20 @@
 td.tableInputs {
     background-color: white;
+    border-bottom: 3px solid var(--lightBlue);
+    text-align: center;
+    height: 2.5rem;
 }
 
 td.tableButtons {
     background-color: var(--lightBlue);
+    width: 5%;
+    height: 2.5rem;
+    margin-left: 1rem;
+    
+}
+
+tfoot h2 {
+    width: 100%;
 }
 
 th {
@@ -11,8 +22,8 @@ th {
 }
 
 table {
-    margin: auto;
-    /* empty-cells: show; */
     background-color: var(--lightBlue);
-    border: 1rem solid var(--lightBlue);
+    border-spacing: 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }

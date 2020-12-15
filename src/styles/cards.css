@@ -1,9 +1,17 @@
+.cardHolder {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .card {
     padding: 0.5rem 2rem;
-    width: 30%;
-    display: inline-block;
-    margin: auto;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    
 }
 
 .budgetCard {

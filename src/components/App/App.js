@@ -3,14 +3,16 @@ import Friend from "../Friend";
 import Gift from "../Gift/Gift";
 
 const App = ({ gifts }) => (
-	<>
+	<section>
 		<nav>
 			<h1 className="header">Gift Tracker App</h1>
 		</nav>
 
-		<Friend friendName={"bob"} />
+		<div className="cardHolder">
+			<Friend friendName={"bob"} />
 
-		<h2 className="card budgetCard">"Budget Here"</h2>
+			<h2 className="card budgetCard">"Budget Here"</h2>
+		</div>
 
 		<table>
 			<thead>
@@ -36,7 +38,7 @@ const App = ({ gifts }) => (
 				</tr>
 			</tfoot>
 		</table>
-	</>
+	</section>
 );
 
 export default App;
