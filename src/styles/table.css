@@ -1,4 +1,6 @@
 table {
+    margin: auto;
     empty-cells: show;
-    border: 1rem solid blue;
+    background-color: var(--lightBlue);
+    border: 1rem solid var(--lightBlue);
 }

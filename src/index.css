@@ -12,6 +12,9 @@ code {
     monospace;
 }
 
+@import "styles/colours.css";
+
+@import "styles/typography.css";
 
 @import "styles/table.css";
 
