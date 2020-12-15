@@ -19,6 +19,8 @@ code {
 
 @import "styles/body.css";
 
+@import "styles/buttons.css";
+
 @import "styles/table.css";
 
 @import "styles/header.css";

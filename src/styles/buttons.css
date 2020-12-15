@@ -1,0 +1,18 @@
+button {
+    border: none;
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.editButton {
+    background-color: var(--yellow);
+}
+
+.deleteButton {
+    background-color: var(--red);
+}
+
+.addButton {
+    background-color: var(--green);
+}
