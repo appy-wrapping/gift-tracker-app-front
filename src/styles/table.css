@@ -1,6 +1,6 @@
 td.tableInputs {
     background-color: white;
-    border-bottom: 3px solid var(--lightBlue);
+    border-bottom: 5px solid var(--lightBlue);
     text-align: center;
     height: 2.5rem;
 }
