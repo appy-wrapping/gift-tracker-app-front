@@ -16,6 +16,7 @@ class Gift extends Component {
 		this.handleGiftName = this.handleGiftName.bind(this);
 		this.handlePrice = this.handlePrice.bind(this);
 		this.handleBought = this.handleBought.bind(this);
+		this.handleEditing = this.handleEditing.bind(this);
 	}
 	handleGiftName(e) {
 		this.setState({ item_name: e.currentTarget.value });
@@ -29,12 +30,23 @@ class Gift extends Component {
 		this.setState({ bought: e.currentTarget.checked });
 	}
 
+	handleEditing(e) {
+		this.setState({ editing: !this.state.editing });
+	}
+
 	render() {
 		let { item_name, price, bought } = this.state;
 
 		return (
 			<tr>
-				{this.state.editing ?
+				{" "}
+				<td>
+					<button>X</button>
+				</td>
+				<td>
+					<button onClick={this.handleEditing}>/</button>
+				</td>
+				{this.state.editing ? (
 					<Editing
 						item_name={item_name}
 						price={price}
@@ -43,16 +55,10 @@ class Gift extends Component {
 						handlePrice={this.handlePrice}
 						handleBought={this.handleBought}
 					/>
-					:
-					<Row
-						item_name={item_name}
-						price={price}
-						bought={false}
-					/>
-				}
-
+				) : (
+					<Row item_name={item_name} price={price} bought={false} />
+				)}
 			</tr>
-
 		);
 	}
 }
