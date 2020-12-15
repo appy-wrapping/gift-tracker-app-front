@@ -1,4 +1,4 @@
-import react from "react";
+// import react from "react";
 const Friend = ({ friendName }) => (
 	<>
 		<h1>{friendName}</h1>

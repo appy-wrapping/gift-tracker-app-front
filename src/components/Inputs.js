@@ -1,4 +1,4 @@
-import Gift from "./Gift";
+// import Gift from "./Gift";
 const Inputs = ({ handleChange, value, type, checkbox }) => (
 
 	<td>

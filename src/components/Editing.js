@@ -1,4 +1,4 @@
-import react from "react";
+// import react from "react";
 import Inputs from "./Inputs";
 
 const Editing = ({ item_name, price, bought, handleGiftName, handlePrice, handleBought }) => (

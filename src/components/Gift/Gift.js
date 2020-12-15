@@ -1,5 +1,5 @@
 import { Component } from "react";
-import Inputs from "../Inputs";
+
 import Row from "../Row";
 import Editing from "../Editing";
 
@@ -8,9 +8,9 @@ class Gift extends Component {
 		super(props);
 
 		this.state = {
-			item_name: props.item_name,
-			price: 0.0, //edit
-			bought: false, //edit
+			item_name: this.props.gift.item_name,
+			price: this.props.gift.price,
+			bought: this.props.gift.bought,
 			editing: false,
 		};
 		this.handleGiftName = this.handleGiftName.bind(this);
