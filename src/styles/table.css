@@ -1,3 +1,4 @@
 table {
-    empty-cells: show,
+    empty-cells: show;
+    border: 1rem solid blue;
 }

@@ -12,6 +12,9 @@ code {
     monospace;
 }
 
-/* import styles files from folder  */
 
 @import "styles/table.css";
+
+@import "styles/header.css";
+
+@import "styles/friend.css";
