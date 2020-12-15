@@ -5,21 +5,21 @@ import Gift from "../Gift/Gift";
 const App = ({ gifts }) => (
 	<>
 		<nav>
-			<h1>Gift Tracker App</h1>
+			<h1 className="header">Gift Tracker App</h1>
 		</nav>
 
 		<Friend friendName={"bob"} />
 
-		<h2>"Budget Here"</h2>
+		<h2 className="card budgetCard">"Budget Here"</h2>
 
 		<table>
 			<thead>
 				<tr>
 					<th></th>
 					<th></th>
-					<th><h2>Description</h2></th>
-					<th><h2>Price</h2></th>
-					<th><h2>Bought?</h2></th>
+					<th><h3>Description</h3></th>
+					<th><h3>Price</h3></th>
+					<th><h3>Bought?</h3></th>
 				</tr>
 			</thead>
 

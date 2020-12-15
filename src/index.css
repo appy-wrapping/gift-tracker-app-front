@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--darkBlue);
 }
 
 code {
@@ -20,4 +21,4 @@ code {
 
 @import "styles/header.css";
 
-@import "styles/friend.css";
+@import "styles/cards.css";
