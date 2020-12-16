@@ -18,8 +18,8 @@ const App = ({ gifts }) => (
 			<table>
 				<thead>
 					<tr>
-						<th></th>
-						<th></th>
+						<th className="tdNarrow"></th>
+						<th className="tdNarrow"></th>
 						<th><h3>Description</h3></th>
 						<th><h3>Price</h3></th>
 						<th><h3>Bought?</h3></th>
@@ -34,13 +34,12 @@ const App = ({ gifts }) => (
 					}
 				</tbody>
 
-				<tfoot>
-					<tr>
-						<td colSpan="5"><h2>Total Goes Here</h2></td>
-					</tr>
-				</tfoot>
+
 			</table>
 		</article>
+
+		<h2>Total Goes Here</h2>
+
 	</section>
 );
 

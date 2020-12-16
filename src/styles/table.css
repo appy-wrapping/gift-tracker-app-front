@@ -1,7 +1,7 @@
-/* .table {
+.table {
     background-color: var(--lightBlue);
     padding: 2rem;
-} */
+}
 
 td.tableInputs {
     background-color: white;
@@ -12,13 +12,14 @@ td.tableInputs {
     
 }
 
-td.tableInputs:last-of-type {
-    border-right: 2rem solid var(--lightBlue);
+.tdNarrow {
+    max-width: 2rem;
+    padding: 0;
 }
 
 .tableButtons {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    display: block;
+    margin: auto;
     
 }
 
@@ -34,13 +35,14 @@ td.tableInputs:last-of-type {
 tfoot {
     background-color: var(--midBlue);
     text-align: center;
+    border-top: 2rem solid var(--lightBlue);
     
 }
 
 th {
     background-color: var(--lightBlue);
-    padding-left: 2rem;
-    padding-right: 2rem;
+    /* padding-left: 2rem;
+    padding-right: 2rem; */
 }
 
 
