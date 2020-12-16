@@ -18,6 +18,7 @@ class Gift extends Component {
 		this.handleBought = this.handleBought.bind(this);
 		this.handleEditing = this.handleEditing.bind(this);
 		this.handleDelete = this.handleDelete.bind(this);
+		this.handleDelete = this.handleDelete.bind(this);
 	}
 	handleGiftName(e) {
 		this.setState({ item_name: e.currentTarget.value });
@@ -37,6 +38,10 @@ class Gift extends Component {
 
 	handleDelete(e) {
 		this.props.deleteGift(this.props.gift.id);
+	}
+
+	handleAdd(e) {
+		this.props.deleteAdd(this.props.gift.id);
 	}
 
 	render() {
