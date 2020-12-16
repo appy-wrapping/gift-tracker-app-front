@@ -11,7 +11,11 @@ const Row = ({ item_name, price, bought, editing }) => (
 
 		<td className="tableInputs">{price}</td>
 
-		<td className="tableInputs"><button className={bought ? "button tickButton" : "button crossButton"}></button></td>
+		<td className="tableInputs">
+			<div className="buttonCentre">
+				<button className={bought ? "button tickButton" : "button crossButton"} />
+			</div>
+		</td>
 	</>
 );
 
