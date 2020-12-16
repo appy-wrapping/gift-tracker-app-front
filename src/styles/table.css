@@ -20,9 +20,7 @@ td.tableInputs:last-of-type {
 
 .tableTextInput {
     background-color: white;
-    border-top: 2px solid var(--lightBlue);
-    border-bottom: 2px solid var(--lightBlue);
-    border-left: none;
+    border: 2px solid var(--white);
     border-right: none;
     text-align: center;
     vertical-align: middle;
@@ -30,9 +28,9 @@ td.tableInputs:last-of-type {
     width: 100%;
 }
 
-.tableCheckbox {
-    
-}
+/* .tableCheckbox {
+
+} */
 
 .tdNarrow {
     max-width: 4rem;

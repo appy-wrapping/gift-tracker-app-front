@@ -8,18 +8,21 @@ const Editing = ({ item_name, price, bought, handleGiftName, handlePrice, handle
         <Inputs
             label="Gift Name"
             value={item_name}
-            checkbox={false}
+            type="text"
+            // checkbox={false}
             handleChange={handleGiftName}
         />
         <Inputs
             label="Price"
             value={price}
-            checkbox={false}
+            type="text"
+            // checkbox={false}
             handleChange={handlePrice}
         />
         <Inputs
             label="Bought"
-            checkbox={true}
+            type="checkbox"
+            // checkbox={true}
             handleChange={handleBought}
         />
     </>
