@@ -1,6 +1,7 @@
 import Friend from "../Friend";
+import Add from "../Add";
 
-import Gift from "../Gift/Gift";
+import Gift from "../Gift";
 
 const App = ({ gifts }) => (
 	<section>
@@ -29,9 +30,10 @@ const App = ({ gifts }) => (
 
 				{/* Stick a row component here */}
 				<tbody>
-					{
-						gifts.map((gift, i) => <Gift gift={gift} key={i} />)
-					}
+					{gifts.map((gift) => (
+						<Gift gift={gift} key={gift.id} />
+					))}
+					<Add />
 				</tbody>
 
 
@@ -41,6 +43,7 @@ const App = ({ gifts }) => (
 		<h2 className="footer">Total Goes Here</h2>
 
 	</section>
+
 );
 
 export default App;

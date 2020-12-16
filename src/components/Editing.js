@@ -3,8 +3,8 @@ import Inputs from "./Inputs";
 
 const Editing = ({ item_name, price, bought, handleGiftName, handlePrice, handleBought }) => (
     <>
-        <td className="tdNarrow"><button className="deleteButton tableButtons"></button></td>
-        <td className="tdNarrow"><button className="saveButton tableButtons"></button></td>
+        {/* <td className="tdNarrow"><button className="deleteButton tableButtons"></button></td>
+        <td className="tdNarrow"><button className="saveButton tableButtons"></button></td> */}
         <Inputs
             label="Gift Name"
             value={item_name}
@@ -22,7 +22,7 @@ const Editing = ({ item_name, price, bought, handleGiftName, handlePrice, handle
         <Inputs
             label="Bought"
             type="checkbox"
-            // checkbox={true}
+            checkbox={true}
             handleChange={handleBought}
         />
     </>

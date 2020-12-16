@@ -1,4 +1,4 @@
-const Inputs = ({ handleChange, value, type, bought }) => (
+const Inputs = ({ handleChange, value, type, bought, placeholder }) => (
 
 	type === "text" ?
 		<td className="tableInputs">
@@ -7,6 +7,7 @@ const Inputs = ({ handleChange, value, type, bought }) => (
 				type="text"
 				value={value}
 				onChange={handleChange}
+				placeholder={placeholder}
 			/>
 		</td>
 		:
@@ -14,7 +15,8 @@ const Inputs = ({ handleChange, value, type, bought }) => (
 			<div className="buttonCentre">
 				<button
 					className={bought ? "button tickButton" : "button crossButton"}
-					onChange={handleChange}
+					onClick={handleChange}
+					placeholder={placeholder}
 				/>
 			</div>
 		</td>
