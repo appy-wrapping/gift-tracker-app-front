@@ -7,12 +7,45 @@ button {
 
 .editButton {
     background-color: var(--yellow);
+    background-image: url(../assets/pencil.svg);
+}
+
+.editButton:hover {
+    background-color: var(--midYellow);
 }
 
 .deleteButton {
     background-color: var(--red);
+    background-image: url(../assets/minus.svg);
+}
+
+.deleteButton:hover {
+    background-color: var(--midRed);
 }
 
 .addButton {
     background-color: var(--green);
+    background-image: url(../assets/plus.svg);
+}
+
+.addButton:hover {
+    background-color: var(--midGreen);
+}
+
+.tickButton {
+    background-color: var(--green);
+    background-image: url(../assets/tick.svg);
+}
+
+.tickButton:hover{
+    background-color: var(--midGreen);
+}
+
+.crossButton {
+    background-color: var(--red);
+    background-image: url(../assets/cross.svg);
+}
+
+.crossButton:hover {
+    background-color: var(--midRed);
 }
