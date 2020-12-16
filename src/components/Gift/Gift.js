@@ -29,7 +29,7 @@ class Gift extends Component {
 	}
 
 	handleBought(e) {
-		this.setState({ bought: e.currentTarget.checked });
+		this.setState({ bought: !this.state.bought });
 	}
 
 	handleEditing(e) {
