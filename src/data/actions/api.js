@@ -1,4 +1,14 @@
 import { removeGift, addGift, editGift } from "./state";
+import axios from "../../axios";
+
+export const getGifts = () => {
+	return (dispatch) => {
+		axios.get("gifts").then(({ data }) => {
+			console.log(data);
+		});
+	};
+};
+
 export const deleteGift = (id) => {
 	return (dispatch) => {
 		//send id to api to delete gift

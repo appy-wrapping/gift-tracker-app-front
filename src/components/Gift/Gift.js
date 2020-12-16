@@ -20,6 +20,11 @@ class Gift extends Component {
 		this.handleEditing = this.handleEditing.bind(this);
 		this.handleDelete = this.handleDelete.bind(this);
 	}
+
+	componentDidMount() {
+		this.props.getGifts();
+	}
+
 	handleGiftName(e) {
 		this.setState({ item_name: e.currentTarget.value });
 	}
