@@ -8,24 +8,25 @@ td.tableInputs {
     border-top: 2px solid var(--lightBlue);
     border-bottom: 2px solid var(--lightBlue);
     text-align: center;
-    height: 2.5rem;
-    
+    vertical-align: middle;
+    height: 3rem;
 }
 
 .tdNarrow {
-    max-width: 2rem;
-    padding: 0;
+    max-width: 4rem;
+    padding-right: 1rem;
+    display:inline-block;
 }
 
 .tableButtons {
     display: block;
     margin: auto;
-    
 }
 
 .tableRow {
     border-left: 2rem solid var(--lightBlue);
     border-right: 2rem solid var(--lightBlue);
+    
 }
 
 .tableRow:last-of-type {

@@ -38,7 +38,7 @@ const App = ({ gifts }) => (
 			</table>
 		</article>
 
-		<h2>Total Goes Here</h2>
+		<h2 className="footer">Total Goes Here</h2>
 
 	</section>
 );
