@@ -37,21 +37,27 @@ class Add extends Component {
 				<tr>
 					<td></td>
 					<td>
-						<button onClick={this.handleAdd}>+</button>
+						<button onClick={this.handleAdd} class="tableButton addButton" />
 					</td>
 
 					<Inputs
 						label="Gift Name"
 						value={item_name}
+						placeholder="Your gift here"
 						checkbox={false}
 						handleChange={this.handleGiftName}
+						type="text"
 					/>
 					<Inputs
 						label="Price"
 						value={price}
+						placeholder="£0.00"
 						checkbox={false}
 						handleChange={this.handlePrice}
+						type="text"
 					/>
+
+					<Inputs />
 				</tr>
 			</>
 		);

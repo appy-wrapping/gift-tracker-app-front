@@ -33,7 +33,7 @@ class Gift extends Component {
 		this.setState({ price: e.currentTarget.value });
 	}
 
-	handleBought(e) {
+	handleBought() {
 		this.setState({ bought: !this.state.bought });
 	}
 
@@ -59,13 +59,13 @@ class Gift extends Component {
 
 		return (
 			<>
-				<tr>
+				<tr className="tableRow">
 					{" "}
-					<td>
-						<button onClick={this.handleDelete}>X</button>
+					<td className="tdNarrow">
+						<button className="tableButtons deleteButton" onClick={this.handleDelete} />
 					</td>
-					<td>
-						<button onClick={this.handleEditing}>/</button>
+					<td className="tdNarrow">
+						<button onClick={this.handleEditing} className={!this.state.editing ? "tableButtons editButton" : "button saveButton"} />
 					</td>
 					{this.state.editing ? (
 						<Editing
@@ -77,8 +77,8 @@ class Gift extends Component {
 							handleBought={this.handleBought}
 						/>
 					) : (
-						<Row item_name={item_name} price={price} bought={bought} />
-					)}
+							<Row item_name={item_name} price={price} bought={bought} />
+						)}
 				</tr>
 			</>
 		);

@@ -1,0 +1,23 @@
+.cardHolder {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card {
+    padding: 0.5rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    
+}
+
+.budgetCard {
+    background-color: var(--green);
+}
+
+.friendCard {
+    background-color: var(--yellow);
+}

@@ -1,0 +1,78 @@
+.table {
+    background-color: var(--lightBlue);
+    padding: 2rem;
+}
+
+td {
+    height: 6rem;
+}
+
+td.tableInputs {
+    background-color: white;
+    border-top: 2px solid var(--lightBlue);
+    border-bottom: 2px solid var(--lightBlue);
+    text-align: center;
+    vertical-align: middle;
+    height: 3rem;
+    width: 30%;
+}
+
+td.tableInputs:last-of-type {
+    border-top: 2px solid var(--lightBlue);
+    border-bottom: 2px solid var(--lightBlue);
+}
+
+.tableTextInput {
+    background-color: white;
+    border: none;
+    text-align: center;
+    height: 4rem;
+    width: 100%;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+/* .tableCheckbox {
+
+} */
+
+.tdNarrow {
+    max-width: 4rem;
+    padding-right: 1rem;
+}
+
+.tableButtons {
+    display: block;
+    margin: auto;
+}
+
+.tableRow {
+    border-left: 2rem solid var(--lightBlue);
+    border-right: 2rem solid var(--lightBlue);
+    width: 100%;
+}
+
+.tableRow:last-of-type {
+    border-bottom: 2rem solid var(--lightBlue);
+}
+
+tfoot {
+    background-color: var(--midBlue);
+    text-align: center;
+    border-top: 2rem solid var(--lightBlue);
+    
+}
+
+th {
+    background-color: var(--lightBlue);
+}
+
+
+table {
+    background-color: var(--lightBlue);
+    border-spacing: 0;
+    width: 100%;
+}
+
+
