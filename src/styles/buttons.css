@@ -44,6 +44,7 @@ button {
 .crossButton {
     background-color: var(--red);
     background-image: url(../assets/cross.svg);
+    vertical-align: middle;
 }
 
 .crossButton:hover {

@@ -19,6 +19,9 @@ h2 {
 
 h2.footer {
     background-color: var(--midBlue);
+    margin: 0;
+    padding: 2rem;
+    text-align: center;
 }
 
 h3 {

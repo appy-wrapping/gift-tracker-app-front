@@ -10,12 +10,17 @@ td.tableInputs {
     text-align: center;
     vertical-align: middle;
     height: 3rem;
+    width: 30%;
+}
+
+td.tableInputs:last-of-type {
+    border-top: 2px solid var(--lightBlue);
+    border-bottom: 2px solid var(--lightBlue);
 }
 
 .tdNarrow {
     max-width: 4rem;
     padding-right: 1rem;
-    display:inline-block;
 }
 
 .tableButtons {
@@ -26,7 +31,7 @@ td.tableInputs {
 .tableRow {
     border-left: 2rem solid var(--lightBlue);
     border-right: 2rem solid var(--lightBlue);
-    
+    width: 100%;
 }
 
 .tableRow:last-of-type {
@@ -42,8 +47,6 @@ tfoot {
 
 th {
     background-color: var(--lightBlue);
-    /* padding-left: 2rem;
-    padding-right: 2rem; */
 }
 
 
