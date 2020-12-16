@@ -1,4 +1,5 @@
 import Friend from "../Friend";
+import Add from "../Add";
 
 import Gift from "../Gift";
 
@@ -28,6 +29,7 @@ const App = ({ gifts }) => (
 				{gifts.map((gift) => (
 					<Gift gift={gift} key={gift.id} />
 				))}
+				<Add />
 			</tbody>
 
 			<tfoot>

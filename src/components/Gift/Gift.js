@@ -2,6 +2,7 @@ import { Component } from "react";
 
 import Row from "../Row";
 import Editing from "../Editing";
+import Inputs from "../Inputs";
 
 class Gift extends Component {
 	constructor(props) {
@@ -18,7 +19,6 @@ class Gift extends Component {
 		this.handleBought = this.handleBought.bind(this);
 		this.handleEditing = this.handleEditing.bind(this);
 		this.handleDelete = this.handleDelete.bind(this);
-		this.handleDelete = this.handleDelete.bind(this);
 	}
 	handleGiftName(e) {
 		this.setState({ item_name: e.currentTarget.value });
@@ -33,6 +33,15 @@ class Gift extends Component {
 	}
 
 	handleEditing(e) {
+		if (this.state.editing) {
+			this.props.editGift({
+				id: this.props.gift.id,
+				item_name: this.state.item_name,
+				price: this.state.price,
+				bought: this.state.bought,
+			});
+		}
+
 		this.setState({ editing: !this.state.editing });
 	}
 
@@ -40,35 +49,33 @@ class Gift extends Component {
 		this.props.deleteGift(this.props.gift.id);
 	}
 
-	handleAdd(e) {
-		this.props.deleteAdd(this.props.gift.id);
-	}
-
 	render() {
 		let { item_name, price, bought } = this.state;
 
 		return (
-			<tr>
-				{" "}
-				<td>
-					<button onClick={this.handleDelete}>X</button>
-				</td>
-				<td>
-					<button onClick={this.handleEditing}>/</button>
-				</td>
-				{this.state.editing ? (
-					<Editing
-						item_name={item_name}
-						price={price}
-						bought={bought}
-						handleGiftName={this.handleGiftName}
-						handlePrice={this.handlePrice}
-						handleBought={this.handleBought}
-					/>
-				) : (
-					<Row item_name={item_name} price={price} bought={false} />
-				)}
-			</tr>
+			<>
+				<tr>
+					{" "}
+					<td>
+						<button onClick={this.handleDelete}>X</button>
+					</td>
+					<td>
+						<button onClick={this.handleEditing}>/</button>
+					</td>
+					{this.state.editing ? (
+						<Editing
+							item_name={item_name}
+							price={price}
+							bought={bought}
+							handleGiftName={this.handleGiftName}
+							handlePrice={this.handlePrice}
+							handleBought={this.handleBought}
+						/>
+					) : (
+						<Row item_name={item_name} price={price} bought={bought} />
+					)}
+				</tr>
+			</>
 		);
 	}
 }
