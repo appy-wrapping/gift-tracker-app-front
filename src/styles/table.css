@@ -18,6 +18,22 @@ td.tableInputs:last-of-type {
     border-bottom: 2px solid var(--lightBlue);
 }
 
+.tableTextInput {
+    background-color: white;
+    border-top: 2px solid var(--lightBlue);
+    border-bottom: 2px solid var(--lightBlue);
+    border-left: none;
+    border-right: none;
+    text-align: center;
+    vertical-align: middle;
+    height: 3rem;
+    width: 100%;
+}
+
+.tableCheckbox {
+    
+}
+
 .tdNarrow {
     max-width: 4rem;
     padding-right: 1rem;
@@ -55,3 +71,5 @@ table {
     border-spacing: 0;
     width: 100%;
 }
+
+

@@ -3,8 +3,8 @@ import Inputs from "./Inputs";
 
 const Editing = ({ item_name, price, bought, handleGiftName, handlePrice, handleBought }) => (
     <>
-        <td><button>X</button></td>
-        <td><button>/</button></td>
+        <td className="tdNarrow"><button className="deleteButton tableButtons"></button></td>
+        <td className="tdNarrow"><button className="saveButton tableButtons"></button></td>
         <Inputs
             label="Gift Name"
             value={item_name}

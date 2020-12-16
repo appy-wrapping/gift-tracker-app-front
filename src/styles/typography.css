@@ -33,3 +33,13 @@ h3 {
     padding-bottom: 0.5rem;
     margin: 0;
 }
+
+input {
+    font-family: 'Oswald', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: var(--darkBlue);
+    font-size:calc(12px + 1.5vw); 
+}
