@@ -10,7 +10,7 @@ export const getGifts = () => {
 						id: gift.id,
 						item_name: gift.item_name,
 						price: gift.price,
-						bought: false,
+						bought: gift.bought,
 						total: 0.0,
 						friend_id: 1,
 					})

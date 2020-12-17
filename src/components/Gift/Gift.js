@@ -34,6 +34,12 @@ class Gift extends Component {
 
 	handleBought() {
 		this.setState({ bought: !this.state.bought });
+		this.props.editGift({
+			id: this.props.gift.id,
+			item_name: this.state.item_name,
+			price: this.state.price,
+			bought: !this.state.bought,
+		});
 	}
 
 	handleEditing() {
@@ -86,7 +92,12 @@ class Gift extends Component {
 							handleBought={this.handleBought}
 						/>
 					) : (
-						<Row item_name={item_name} price={price} bought={bought} />
+						<Row
+							item_name={item_name}
+							price={price}
+							bought={bought}
+							handleClick={this.handleBought}
+						/>
 					)}
 				</tr>
 			</>
