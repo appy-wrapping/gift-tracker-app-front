@@ -1,6 +1,14 @@
 .table {
     background-color: var(--lightBlue);
     padding: 2rem;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .table {
+        /* padding: 1rem; */
+        width: 80%;
+    }
 }
 
 td {
@@ -33,10 +41,6 @@ td.tableInputs:last-of-type {
     margin: 0;
 }
 
-/* .tableCheckbox {
-
-} */
-
 .tdNarrow {
     max-width: 4rem;
     padding-right: 1rem;
@@ -57,22 +61,13 @@ td.tableInputs:last-of-type {
     border-bottom: 2rem solid var(--lightBlue);
 }
 
-tfoot {
-    background-color: var(--midBlue);
-    text-align: center;
-    border-top: 2rem solid var(--lightBlue);
-    
-}
-
 th {
     background-color: var(--lightBlue);
 }
 
-
 table {
     background-color: var(--lightBlue);
     border-spacing: 0;
-    width: 100%;
 }
 
 
