@@ -22,6 +22,19 @@ button {
     background-color: var(--midYellow);
 }
 
+.editButtonTwo {
+    background-color: var(--darkBlue);
+    background-image: url(../assets/pencil.svg);
+    vertical-align: middle;
+    fill: var(--green);
+}
+
+.editButtonTwo:hover {
+    background-color: var(--darkBlue);
+    background-image: url(../assets/pencil.svg);
+    vertical-align: middle;
+}
+
 .saveButton {
     background-color: var(--yellow);
     background-image: url(../assets/save.svg);
