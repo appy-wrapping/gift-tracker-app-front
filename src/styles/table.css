@@ -1,13 +1,13 @@
 .table {
     background-color: var(--lightBlue);
-    padding: 2rem;
-    width: 100%;
+    /* padding: 2rem; */
+    /* width: 100%; */
 }
 
 @media screen and (max-width: 768px) {
     .table {
-        /* padding: 1rem; */
-        width: 80%;
+        padding: 1rem;
+        /* width: 80%; */
     }
 }
 

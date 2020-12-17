@@ -9,14 +9,14 @@ const App = ({ gifts }) => (
 			<h1 className="header">Gift Tracker App</h1>
 		</nav>
 
-		{/* <div className="cardHolder">
+		<div className="cardHolder">
 			<Friend friendName={"bob"} />
 
 			<h2 className="card budgetCard">"Budget Here"</h2>
-		</div> */}
+		</div>
 
 		<article className="table">
-			{/* <table>
+			<table>
 				<thead>
 					<tr>
 						<th className="tdNarrow"></th>
@@ -29,15 +29,15 @@ const App = ({ gifts }) => (
 
 
 				{/* Stick a row component here */}
-			{/* <tbody>
+				<tbody>
 					{gifts.map((gift) => (
 						<Gift gift={gift} key={gift.id} />
 					))}
 					<Add />
-				</tbody> */}
+				</tbody>
 
 
-			{/* </table>  */}
+			</table>
 		</article>
 
 		<h2 className="footer">Total Goes Here</h2>
