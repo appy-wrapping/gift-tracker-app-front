@@ -33,11 +33,12 @@ const reducer = (state, action) => {
 					}
 				}),
 			};
+			// console.log(action.payload);
 
 			case "EDIT_FRIEND":
 				return {
 					...state,
-					gifts: state.gifts.map((friend) => {
+					friends: state.friends.map((friend) => {
 						if (friend.id !== action.payload.id) {
 							return friend;
 						} else {
