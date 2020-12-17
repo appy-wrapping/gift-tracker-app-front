@@ -31,16 +31,23 @@ export const deleteGift = (id) => {
 
 export const postGift = ({ item_name, price }) => {
 	return (dispatch) => {
-		dispatch(
-			addGift({
-				id: 12,
+		axios
+			.post("friends/1/gifts", {
 				item_name: item_name,
 				price: price,
-				bought: false,
-				total: 0.0,
-				friend_id: 1,
 			})
-		);
+			.then(({ data }) => {
+				dispatch(
+					addGift({
+						id: data.id,
+						item_name: data.item_name,
+						price: data.price,
+						bought: false,
+						total: 0.0,
+						friend_id: data.friend_id,
+					})
+				);
+			});
 	};
 };
 
