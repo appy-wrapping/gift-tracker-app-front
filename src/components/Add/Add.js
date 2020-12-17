@@ -58,7 +58,7 @@ class Add extends Component {
 						placeholder="£0.00"
 						checkbox={false}
 						handleChange={this.handlePrice}
-						type="text"
+						type="number"
 					/>
 
 					<Inputs />
