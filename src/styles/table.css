@@ -1,15 +1,15 @@
 .table {
     background-color: var(--lightBlue);
-    /* padding: 2rem; */
-    /* width: 100%; */
+    padding: 2rem;
+    
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .table {
         padding: 1rem;
-        /* width: 80%; */
+        width: 80%;
     }
-}
+} */
 
 td {
     height: 6rem;
@@ -54,7 +54,7 @@ td.tableInputs:last-of-type {
 .tableRow {
     border-left: 2rem solid var(--lightBlue);
     border-right: 2rem solid var(--lightBlue);
-    width: 100%;
+    /* width: 100%; */
 }
 
 .tableRow:last-of-type {

@@ -36,7 +36,7 @@ class Add extends Component {
 
 		return (
 			<>
-				<tr>
+				<tr className="tableRow">
 					<td></td>
 					<td>
 						<button
@@ -63,7 +63,7 @@ class Add extends Component {
 						type="number"
 					/>
 
-					<Inputs handleChange={this.handlePrice}	/>
+					<Inputs handleChange={this.handlePrice} />
 				</tr>
 			</>
 		);
