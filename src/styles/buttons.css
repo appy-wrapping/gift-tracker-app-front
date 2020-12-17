@@ -6,6 +6,13 @@ button {
     vertical-align: middle;
 }
 
+@media screen and (max-width: 768px) {
+    button {
+        height: 4rem;
+        width: 4rem;
+    }
+}
+
 .editButton {
     background-color: var(--yellow);
     background-image: url(../assets/pencil.svg);
@@ -80,6 +87,12 @@ button {
     background-color: var(--red);
     background-image: url(../assets/cross.svg);
     vertical-align: middle;
+}
+
+@media screen and (max-width: 768px) {
+    .crossButton {
+        margin-left: 1rem;
+    }
 }
 
 .crossButton:hover {
