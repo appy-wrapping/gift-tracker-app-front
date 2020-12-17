@@ -1,11 +1,20 @@
-
 import App from "./App";
 import { connect } from "react-redux";
 
-const mapStateToProps = (state) => {
-    return {
-        gifts: state.gifts
-    }
-}
+import { getGifts } from "../../data/actions/api";
 
-export default connect(mapStateToProps)(App); // wraps the component with mapStateToProps
+const mapStateToProps = (state) => {
+	return {
+		gifts: state.gifts,
+	};
+};
+
+const mapDispatchToProps = (dispatch) => {
+	return {
+		getGifts: () => {
+			dispatch(getGifts());
+		},
+	};
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
