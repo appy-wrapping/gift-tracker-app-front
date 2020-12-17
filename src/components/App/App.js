@@ -1,6 +1,7 @@
 import Friend from "../Friend";
 import Add from "../Add";
 import { Component } from "react";
+import Total from '../Total/Total';
 
 import Gift from "../Gift";
 
@@ -54,7 +55,8 @@ class App extends Component {
 					</table>
 				</article>
 
-				<h2 className="footer">Total Goes Here</h2>
+				{/* <h2 className="footer">Total Goes Here</h2> */}
+				<Total />
 			</section>
 		);
 	}
