@@ -39,7 +39,11 @@ class Add extends Component {
 				<tr>
 					<td></td>
 					<td>
-						<button onClick={this.handleAdd} class="tableButton addButton" />
+						<button
+							onClick={this.handleAdd}
+							class="tableButton addButton"
+							disabled={!item_name}
+						/>
 					</td>
 
 					<Inputs
@@ -56,7 +60,7 @@ class Add extends Component {
 						placeholder="£0.00"
 						checkbox={false}
 						handleChange={this.handlePrice}
-						type="text"
+						type="number"
 					/>
 
 					<Inputs handleChange={this.handlePrice}	/>
