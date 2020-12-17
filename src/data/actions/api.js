@@ -79,6 +79,7 @@ export const patchGift = ({ item_name, price, bought, id }) => {
 						item_name: data.item_name,
 						price: data.price,
 						bought: data.bought,
+						id: data.id
 					})
 				);
 			});
