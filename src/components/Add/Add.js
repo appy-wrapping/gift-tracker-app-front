@@ -8,7 +8,7 @@ class Add extends Component {
 
 		this.state = {
 			item_name: "",
-			price: 0,
+			price: "",
 		};
 
 		this.handleAdd = this.handleAdd.bind(this);
