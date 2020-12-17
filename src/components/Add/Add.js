@@ -10,6 +10,7 @@ class Add extends Component {
 			item_name: "",
 			price: "",
 		};
+
 		this.handleAdd = this.handleAdd.bind(this);
 		this.handleGiftName = this.handleGiftName.bind(this);
 		this.handlePrice = this.handlePrice.bind(this);
@@ -23,7 +24,7 @@ class Add extends Component {
 		this.setState({ price: e.currentTarget.value });
 	}
 
-	handleAdd(e) {
+	handleAdd() {
 		this.props.addGift({
 			item_name: this.state.item_name,
 			price: this.state.price,
@@ -31,13 +32,18 @@ class Add extends Component {
 		this.setState({ item_name: "", price: 0 });
 	}
 	render() {
-		let { item_name, price, bought } = this.state;
+		let { item_name, price } = this.state;
+
 		return (
 			<>
 				<tr>
 					<td></td>
 					<td>
-						<button onClick={this.handleAdd} class="tableButton addButton" />
+						<button
+							onClick={this.handleAdd}
+							class="tableButton addButton"
+							disabled={!item_name}
+						/>
 					</td>
 
 					<Inputs
@@ -54,10 +60,10 @@ class Add extends Component {
 						placeholder="£0.00"
 						checkbox={false}
 						handleChange={this.handlePrice}
-						type="text"
+						type="number"
 					/>
 
-					<Inputs />
+					<Inputs handleChange={this.handlePrice}	/>
 				</tr>
 			</>
 		);
