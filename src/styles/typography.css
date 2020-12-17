@@ -23,9 +23,8 @@ h2 {
     font-weight: 500;
     font-size: 2rem;
     color: var(--darkBlue);
-    margin-top: 0;
-    margin-bottom: 1rem;
-
+    /* margin-top: 0;
+    margin-bottom: 1rem; */
 }
 
 h2.footer {
