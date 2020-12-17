@@ -37,33 +37,17 @@ class App extends Component {
 				</div>
 
 				{ this.state.mobileView ?
-					<article className="table">
-						<table>
-							<thead>
-								<tr>
-									<th className="tdNarrow"></th>
-									<th className="tdNarrow"></th>
-									<th>
-										<h3>Description</h3>
-									</th>
-									<th>
-										<h3>Price</h3>
-									</th>
-									<th>
-										<h3>Bought?</h3>
-									</th>
-								</tr>
-							</thead>
+					<div>
 
-							{/* Stick a row component here */}
-							<tbody>
-								{this.props.gifts.map((gift) => (
-									<Giftcard gift={gift} key={gift.id} />
-								))}
-								<Add />
-							</tbody>
-						</table>
-					</article>
+						{/* Stick a row component here */}
+
+						{this.props.gifts.map((gift) => (
+							<Giftcard gift={gift} key={gift.id} />
+						))}
+						<Add />
+
+
+					</div>
 					:
 					<article className="table">
 						<table>

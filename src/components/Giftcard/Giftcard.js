@@ -57,39 +57,44 @@ class Giftcard extends Component {
 		let { item_name, price, bought } = this.state;
 
 		return (
-			<>
-				<tr className="tableRow">
-					{" "}
-					<td className="tdNarrow">
-						<button
-							className="tableButtons deleteButton"
-							onClick={this.handleDelete}
-						/>
-					</td>
-					<td className="tdNarrow">
-						<button
-							onClick={this.handleEditing}
-							className={
-								!this.state.editing
-									? "tableButtons editButton"
-									: "button saveButton"
-							}
-						/>
-					</td>
-					{this.state.editing ? (
-						<Editing
-							item_name={item_name}
-							price={price}
-							bought={bought}
-							handleGiftName={this.handleGiftName}
-							handlePrice={this.handlePrice}
-							handleBought={this.handleBought}
-						/>
-					) : (
-							<Row item_name={item_name + "hello!"} price={price} bought={bought} />
-						)}
-				</tr>
-			</>
+			<article className="giftcard">
+				<header className="giftcardHeader">
+					<h2>Bought?</h2>
+					<button
+						className={bought ? "button tickButton" : "button crossButton"}
+					/>
+				</header>
+
+
+				<h2>Description</h2>
+				{ this.state.editing
+					? <input onChange={this.handleGiftName} value={item_name} />
+					: <p className="tableInputs">{item_name}</p>
+				}
+
+				<h2>Price</h2>
+				{ this.state.editing
+					? <input onChange={this.handlePrice} value={price} />
+					: <p className="tableInputs">{`£${price}`}</p>
+				}
+
+				<footer className="giftcardFooter">
+					<button
+						className="tableButtons deleteButton"
+						onClick={this.handleDelete}
+					/>
+
+					<button
+						onClick={this.handleEditing}
+						className={
+							!this.state.editing
+								? "tableButtons editButton"
+								: "button saveButton"
+						}
+					/>
+				</footer>
+
+			</article>
 		);
 	}
 }

@@ -1,0 +1,17 @@
+.giftcardHeader {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.giftcardFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.giftcard {
+    margin-bottom: 1rem;
+    background-color: var(--lightBlue);
+    padding: 0.5rem;
+}
