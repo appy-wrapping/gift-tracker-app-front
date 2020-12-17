@@ -17,35 +17,29 @@
     justify-content: center;
     align-items: center;
     width: 40%;
-    /* padding-top: 1rem;
-    padding-bottom: 1rem; */
+    
 }
 
 @media screen and (max-width: 768px) {
+
     .card {
-        width: 100%;
         justify-content: center;
         align-items: center;
-        
+        margin: auto;
     }
-}
 
-/* .budgetCard {
-    margin-bottom: 0;
-} */
+}
 
 .budgetHolder {
     background-color: var(--green);
     display: flex;
-    
     flex-direction: row;
     width: 40%;
     justify-content: space-around;
-    
-    /* align-items: center;
-    padding-bottom: 1rem; */
-    /* padding-top: 1rem;
-    margin-bottom: 1rem; */
+    align-items: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
 
 }
 
@@ -57,4 +51,13 @@
 
 .friendCard {
     background-color: var(--yellow);
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .friendCard {
+        width: 100%;
+    }
 }

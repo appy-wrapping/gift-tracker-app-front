@@ -31,7 +31,7 @@ class App extends Component {
 					<Friend friendName={"bob"} />
 
 					<div className="budgetHolder">
-						<h2>"Budget Here"</h2>
+						<h2 className="card budgetCard">Budget: £0.00</h2>
 						<button className="button editButtonTwo" />
 					</div>
 				</div>

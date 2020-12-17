@@ -20,12 +20,19 @@ button {
     background-image: url(../assets/pencil.svg);
     vertical-align: middle;
     fill: var(--green);
+    padding-right: 2rem;
 }
 
 .editButtonTwo:hover {
     background-color: var(--darkBlue);
     background-image: url(../assets/pencil.svg);
     vertical-align: middle;
+}
+
+@media screen and (max-width: 768px) {
+    .editButtonTwo {
+        margin: auto;
+    }
 }
 
 .saveButton {
