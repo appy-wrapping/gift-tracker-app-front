@@ -1,14 +1,15 @@
 import Friend from "../Friend";
 import Add from "../Add";
 import { Component } from "react";
+import Total from '../Total';
 
 import Gift from "../Gift";
 
 // const App = ({ gifts }) => (
 class App extends Component {
-	constructor(props) {
-		super(props);
-	}
+	// constructor(props) {
+	// 	super(props);
+	// }
 	componentDidMount() {
 		this.props.getGifts();
 	}
@@ -54,7 +55,8 @@ class App extends Component {
 					</table>
 				</article>
 
-				<h2 className="footer">Total Goes Here</h2>
+				{/* <h2 className="footer">Total Goes Here</h2> */}
+				<Total />
 			</section>
 		);
 	}
