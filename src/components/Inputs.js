@@ -1,6 +1,5 @@
-const Inputs = ({ handleChange, value, type, bought, placeholder }) => (
-
-	type === "text" ?
+const Inputs = ({ handleChange, value, type, bought, placeholder }) =>
+	type === "text" ? (
 		<td className="tableInputs">
 			<input
 				className="tableTextInput"
@@ -10,7 +9,17 @@ const Inputs = ({ handleChange, value, type, bought, placeholder }) => (
 				placeholder={placeholder}
 			/>
 		</td>
-		:
+	) : type === "number" ? (
+		<td className="tableInputs">
+			<input
+				className="tableTextInput"
+				type="number"
+				value={value}
+				onChange={handleChange}
+				placeholder={placeholder}
+			/>
+		</td>
+	) : (
 		<td className="tableInputs">
 			<div className="buttonCentre">
 				<button
@@ -20,21 +29,17 @@ const Inputs = ({ handleChange, value, type, bought, placeholder }) => (
 				/>
 			</div>
 		</td>
+	);
 
-
-	// {/* {!checkbox ?
-	// 	<input
-	// 		className="tableTextInput"
-	// 		type="text"
-	// 		value={value}
-	// 		onChange={handleChange} /> :
-	// 	<input
-	// 		className="tableCheckbox"
-	// 		type="checkbox"
-	// 		onChange={handleChange}
-	// 	/>} */}
-
-
-
-);
+// {/* {!checkbox ?
+// 	<input
+// 		className="tableTextInput"
+// 		type="text"
+// 		value={value}
+// 		onChange={handleChange} /> :
+// 	<input
+// 		className="tableCheckbox"
+// 		type="checkbox"
+// 		onChange={handleChange}
+// 	/>} */}
 export default Inputs;

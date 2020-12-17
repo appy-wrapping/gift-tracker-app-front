@@ -4,7 +4,7 @@ import axios from "../../axios";
 export const getGifts = () => {
 	return (dispatch) => {
 		axios.get("friends/1/gifts").then(({ data }) => {
-			data.data.map((gift) => {
+			data.data.forEach((gift) => {
 				dispatch(
 					addGift({
 						id: gift.id,
