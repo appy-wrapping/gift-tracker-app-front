@@ -15,7 +15,7 @@ td {
     height: 6rem;
 }
 
-td.tableInputs {
+.tableInputs {
     background-color: white;
     border-top: 2px solid var(--lightBlue);
     border-bottom: 2px solid var(--lightBlue);

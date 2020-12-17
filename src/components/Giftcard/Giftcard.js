@@ -65,17 +65,16 @@ class Giftcard extends Component {
 					/>
 				</header>
 
-
 				<h2>Description</h2>
 				{ this.state.editing
 					? <input onChange={this.handleGiftName} value={item_name} />
-					: <p className="tableInputs">{item_name}</p>
+					: <p className="giftcardText">{item_name}</p>
 				}
 
 				<h2>Price</h2>
 				{ this.state.editing
 					? <input onChange={this.handlePrice} value={price} />
-					: <p className="tableInputs">{`£${price}`}</p>
+					: <p className="giftcardText">{`£${price}`}</p>
 				}
 
 				<footer className="giftcardFooter">
@@ -93,7 +92,6 @@ class Giftcard extends Component {
 						}
 					/>
 				</footer>
-
 			</article>
 		);
 	}

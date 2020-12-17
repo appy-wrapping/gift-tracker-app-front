@@ -8,10 +8,21 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .giftcard {
     margin-bottom: 1rem;
     background-color: var(--lightBlue);
     padding: 0.5rem;
+}
+
+.giftcardText {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 3rem;
+    width: 100%;
 }

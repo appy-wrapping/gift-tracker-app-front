@@ -39,8 +39,6 @@ class App extends Component {
 				{ this.state.mobileView ?
 					<div>
 
-						{/* Stick a row component here */}
-
 						{this.props.gifts.map((gift) => (
 							<Giftcard gift={gift} key={gift.id} />
 						))}
