@@ -41,3 +41,14 @@ export const editFriend = ({ id, name, budget }) => {
 		},
 	};
 };
+
+export const addFriend = ({ id, name, budget}) => {
+	return {
+		type: "ADD_FRIEND",
+		payload: {
+			id: id,
+			name: name,
+			budget: budget,
+		},
+	};
+};

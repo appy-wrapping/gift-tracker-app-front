@@ -1,4 +1,4 @@
-import { removeGift, addGift, editGift, editFriend } from "./state";
+import { removeGift, addGift, editGift, editFriend, addFriend } from "./state";
 import axios from "../../axios";
 
 export const getGifts = () => {
@@ -13,6 +13,23 @@ export const getGifts = () => {
 						bought: gift.bought,
 						total: 0.0,
 						friend_id: 1,
+					})
+				);
+			});
+		});
+	};
+};
+
+
+export const getFriends = () => {
+	return (dispatch) => {
+		axios.get("friends").then(({ data }) => {
+			data.data.forEach((friend) => {
+				dispatch(
+					addFriend({
+						id: friend.id,
+						name: friend.name,
+						budget: friend.budget,
 					})
 				);
 			});
