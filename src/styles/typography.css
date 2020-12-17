@@ -67,3 +67,9 @@ input::placeholder {
     color: rgb(175, 175, 175);
     font-style: italic;
 }
+
+.introText {
+    line-height: 2rem;
+    text-align: center;
+    padding-bottom: 4rem;
+}

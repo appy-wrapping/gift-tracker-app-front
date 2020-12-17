@@ -21,7 +21,7 @@
 }
 
 .giftcardText {
-    background-color: white;
+    background-color: var(--offWhite);
     display: flex;
     justify-content: space-around;
     align-items: center;

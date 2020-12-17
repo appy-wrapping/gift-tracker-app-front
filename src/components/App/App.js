@@ -24,8 +24,16 @@ class App extends Component {
 		return (
 			<section>
 				<nav>
-					<h1 className="header">Gift Tracker App</h1>
+					<h1 className="header">Gift Tracker</h1>
 				</nav>
+
+				<div className="introText">
+					<p>Add a friend</p>
+					<div class="arrow" />
+					<p>Set your budget</p>
+					<div class="arrow" />
+					<p>Track your gift spending</p>
+				</div>
 
 				<div className="cardHolder">
 					<Friend friendName={"bob"} />

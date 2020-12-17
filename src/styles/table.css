@@ -17,7 +17,7 @@ td {
 }
 
 .tableInputs {
-    background-color: white;
+    background-color: var(--offWhite);
     border-top: 2px solid var(--lightBlue);
     border-bottom: 2px solid var(--lightBlue);
     text-align: center;
@@ -32,7 +32,7 @@ td.tableInputs:last-of-type {
 }
 
 .tableTextInput {
-    background-color: white;
+    background-color: var(--offWhite);
     border: none;
     text-align: center;
     height: 4rem;
