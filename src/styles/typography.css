@@ -32,16 +32,10 @@ h2.footer {
     background-color: var(--midBlue);
     margin: 0;
     margin-bottom: 1rem;
-    /* padding: 2rem; */
+    padding: 2rem;
     text-align: center;
-    /* width: 95%; */
-}
 
-/* @media screen and (max-width: 768px) {
-    h2.footer {
-        width: 80%;
-    }
-} */
+}
 
 h3 {
     font-family: 'Oswald', sans-serif;
