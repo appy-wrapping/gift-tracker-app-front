@@ -37,7 +37,11 @@ class Add extends Component {
 				<tr>
 					<td></td>
 					<td>
-						<button onClick={this.handleAdd} class="tableButton addButton" />
+						<button
+							onClick={this.handleAdd}
+							class="tableButton addButton"
+							disabled={!item_name}
+						/>
 					</td>
 
 					<Inputs
