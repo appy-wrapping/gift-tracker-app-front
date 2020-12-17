@@ -13,9 +13,6 @@
 }
 
 .card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 40%;
     
 }
@@ -23,8 +20,6 @@
 @media screen and (max-width: 768px) {
 
     .card {
-        justify-content: center;
-        align-items: center;
         margin: auto;
     }
 
@@ -49,15 +44,36 @@
     }
 }
 
+.friendHolder {
+    background-color: var(--yellow);
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    margin-bottom: 1rem; /* Keep this as-is or desktop shifts */
+
+}
+
+@media screen and (max-width: 768px) {
+    .friendHolder {
+        width: 100%;
+    }
+}
+/* 
 .friendCard {
     background-color: var(--yellow);
     padding-bottom: 1rem;
     padding-top: 1rem;
     margin-bottom: 1rem;
-}
+    padding: 0;
+} 
 
 @media screen and (max-width: 768px) {
     .friendCard {
         width: 100%;
+        padding: 0;
     }
-}
+} */
