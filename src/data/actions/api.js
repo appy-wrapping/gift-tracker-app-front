@@ -4,7 +4,6 @@ import axios from "../../axios";
 export const getGifts = () => {
 	return (dispatch) => {
 		axios.get("friends/1/gifts").then(({ data }) => {
-			// console.log(data);
 			data.data.map((gift) => {
 				dispatch(
 					addGift({
@@ -23,9 +22,7 @@ export const getGifts = () => {
 
 export const deleteGift = (id) => {
 	return (dispatch) => {
-		axios.delete(`gifts/${id}`);
-		//then wait for response and dispatch action to redux when response comes back
-		dispatch(removeGift(id));
+		axios.delete(`gifts/${id}`).then(dispatch(removeGift(id)));
 	};
 };
 
