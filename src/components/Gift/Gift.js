@@ -2,7 +2,6 @@ import { Component } from "react";
 
 import Row from "../Row";
 import Editing from "../Editing";
-import Inputs from "../Inputs";
 
 class Gift extends Component {
 	constructor(props) {
@@ -37,7 +36,7 @@ class Gift extends Component {
 		this.setState({ bought: !this.state.bought });
 	}
 
-	handleEditing(e) {
+	handleEditing() {
 		if (this.state.editing) {
 			this.props.editGift({
 				id: this.props.gift.id,
@@ -50,7 +49,7 @@ class Gift extends Component {
 		this.setState({ editing: !this.state.editing });
 	}
 
-	handleDelete(e) {
+	handleDelete() {
 		this.props.deleteGift(this.props.gift.id);
 	}
 
