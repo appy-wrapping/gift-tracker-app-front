@@ -19,12 +19,14 @@ const initial = {
 	],
 
 	friends: [
-		{
-			id: 1,
-			name: "Bob",
-			budget: 500
-		}
-	]
+		// {
+		// 	id: 1,
+		// 	name: "Bob",
+		// 	budget: 500
+		// }
+	],
+
+	friendsLoaded: false,
 };
 
 export default initial;

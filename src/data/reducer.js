@@ -5,6 +5,14 @@ const reducer = (state, action) => {
 				...state,
 				gifts: [...state.gifts, action.payload],
 			};
+
+		case "ADD_FRIEND":
+			return{
+				...state,
+				friends: [...state.friends, action.payload],
+				friendsLoaded: true
+			}
+			
 		case "REMOVE_GIFT":
 			return {
 				...state,
