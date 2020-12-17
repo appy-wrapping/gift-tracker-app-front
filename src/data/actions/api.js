@@ -3,8 +3,20 @@ import axios from "../../axios";
 
 export const getGifts = () => {
 	return (dispatch) => {
-		axios.get("gifts").then(({ data }) => {
-			console.log(data);
+		axios.get("friends/1/gifts").then(({ data }) => {
+			// console.log(data);
+			data.data.map((gift) => {
+				dispatch(
+					addGift({
+						id: gift.id,
+						item_name: gift.item_name,
+						price: gift.price,
+						bought: false,
+						total: 0.0,
+						friend_id: 1,
+					})
+				);
+			});
 		});
 	};
 };
