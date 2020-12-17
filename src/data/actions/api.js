@@ -23,7 +23,7 @@ export const getGifts = () => {
 
 export const deleteGift = (id) => {
 	return (dispatch) => {
-		//send id to api to delete gift
+		axios.delete(`gifts/${id}`);
 		//then wait for response and dispatch action to redux when response comes back
 		dispatch(removeGift(id));
 	};
