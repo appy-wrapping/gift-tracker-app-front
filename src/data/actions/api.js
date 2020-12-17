@@ -97,8 +97,9 @@ export const patchFriend = ({ name, budget, id }) => {
 			.then(({ data }) => {
 				dispatch(
 					editFriend({
-						name: data.item_name,
+						name: data.name,
 						budget: data.budget,
+						id: data.id,
 					})
 				);
 			});
