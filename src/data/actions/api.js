@@ -50,13 +50,38 @@ export const postGift = ({ item_name, price }) => {
 
 export const patchGift = ({ item_name, price, bought, id }) => {
 	return (dispatch) => {
-		dispatch(
-			editGift({
-				id: id,
+		axios
+			.patch(`gifts/${id}`, {
 				item_name: item_name,
 				price: price,
 				bought: bought,
 			})
-		);
+			.then(({ data }) => {
+				dispatch(
+					editGift({
+						item_name: data.item_name,
+						price: data.price,
+						bought: data.bought,
+					})
+				);
+			});
 	};
 };
+
+// export const putStep = (step) => {
+// 	return (dispatch) => {
+// 		// make a PUT request
+// 		axios
+// 			.put("/", {
+// 				// pass along the data to the API
+// 				// can pass in a regular object literal
+// 				// axios will convert into JSON
+// 				step: step,
+// 			})
+// 			.then(({ data }) => {
+// 				// get the step result off the data
+// 				// pass it along to the existing saveSettings action
+// 				dispatch(saveSettings(data.data.step));
+// 			});
+// 	};
+// };
