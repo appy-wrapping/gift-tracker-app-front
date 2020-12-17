@@ -13,6 +13,7 @@
 
 td {
     height: 6rem;
+    vertical-align: middle;
 }
 
 .tableInputs {
