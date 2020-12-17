@@ -22,9 +22,9 @@ class App extends Component {
 				</nav>
 
 				<div className="cardHolder">
-					<Friend friendName={"bob"} />
+					<Friend />
 
-					<h2 className="card budgetCard">"Budget Here"</h2>
+					{/* <h2 className="card budgetCard">"Budget Here"</h2> */}
 				</div>
 
 				<article className="table">

@@ -26,6 +26,21 @@ const reducer = (state, action) => {
 				}),
 			};
 
+			case "EDIT_FRIEND":
+				return {
+					...state,
+					gifts: state.gifts.map((friend) => {
+						if (friend.id !== action.payload.id) {
+							return friend;
+						} else {
+							return {
+								...friend,
+								...action.payload,
+							};
+						}
+					}),
+				};
+
 		default:
 			return state;
 	}

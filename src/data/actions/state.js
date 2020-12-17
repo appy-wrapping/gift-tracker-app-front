@@ -30,3 +30,14 @@ export const editGift = ({ id, item_name, price, bought }) => {
 		},
 	};
 };
+
+export const editFriend = ({ id, name, budget }) => {
+	return {
+		type: "EDIT_FRIEND",
+		payload: {
+			id: id,
+			name: name,
+			budget: budget,
+		},
+	};
+};

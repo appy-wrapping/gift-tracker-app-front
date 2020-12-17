@@ -1,4 +1,4 @@
-import { removeGift, addGift, editGift } from "./state";
+import { removeGift, addGift, editGift, editFriend } from "./state";
 import axios from "../../axios";
 
 export const getGifts = () => {
@@ -62,6 +62,25 @@ export const patchGift = ({ item_name, price, bought, id }) => {
 						item_name: data.item_name,
 						price: data.price,
 						bought: data.bought,
+					})
+				);
+			});
+	};
+};
+
+
+export const patchFriend = ({ name, budget, id }) => {
+	return (dispatch) => {
+		axios
+			.patch(`friends/${id}`, {
+				name: name,
+				budget: budget
+			})
+			.then(({ data }) => {
+				dispatch(
+					editFriend({
+						name: data.item_name,
+						budget: data.budget,
 					})
 				);
 			});
