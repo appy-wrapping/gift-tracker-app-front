@@ -8,8 +8,8 @@ button {
 
 @media screen and (max-width: 768px) {
     button {
-        height: 4rem;
-        width: 4rem;
+        height: 3rem;
+        width: 3rem;
     }
 }
 
@@ -83,6 +83,16 @@ button {
     background-color: var(--darkestBlue);
 }
 
+.saveButtonTwo {
+    background-color: var(--darkBlue);
+    background-image: url(../assets/save.svg);
+    vertical-align: middle;
+}
+
+.saveButtonTwo:hover {
+    background-color: var(--darkestBlue);
+}
+
 .tickButton {
     background-color: var(--green);
     background-image: url(../assets/tick.svg);
@@ -119,8 +129,8 @@ button {
 
 .arrow {
     background-image: url(../assets/downArrow2.svg);
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 2rem;
+    width: 2rem;
     display: flex;
     justify-content: center;
     margin: auto;

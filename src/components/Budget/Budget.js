@@ -33,7 +33,7 @@ const Budget = ({ id, name, propBudget, editFriend }) => {
                         className="card budgetCard"
                         value={`${budget}`} />
 
-                    <button className="button editButtonTwo" id="pencil" onClick={handleEditingBudget}></button>
+                    <button className={!editingBudget ? "button editButtonTwo" : "button saveButtonTwo"} id="pencil" onClick={handleEditingBudget}></button>
                 </div>
                 :
                 <div className="budgetHolder">
