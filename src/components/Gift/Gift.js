@@ -1,5 +1,4 @@
 import { Component } from "react";
-
 import Row from "../Row";
 import Editing from "../Editing";
 
@@ -83,7 +82,7 @@ class Gift extends Component {
 							className={
 								!this.state.editing
 									? "tableButtons editButton"
-									: "button saveButton"
+									: "button tableButtons saveButton"
 							}
 						/>
 					</td>
@@ -97,13 +96,13 @@ class Gift extends Component {
 							handleBought={this.handleBought}
 						/>
 					) : (
-						<Row
-							item_name={item_name}
-							price={price}
-							bought={bought}
-							handleClick={this.handleBought}
-						/>
-					)}
+							<Row
+								item_name={item_name}
+								price={price}
+								bought={bought}
+								handleClick={this.handleBought}
+							/>
+						)}
 				</tr>
 			</>
 		);

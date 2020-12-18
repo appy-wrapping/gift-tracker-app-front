@@ -52,13 +52,23 @@ h3 {
 }
 
 input {
-	font-family: "Oswald", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-		"Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-		sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	color: var(--darkBlue);
-	font-size: calc(12px + 1.5vw);
+    font-family: 'Oswald', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size:calc(12px + 1.5vw); 
+    color: rgb(175, 175, 175);
+    font-style: italic;
+    background-color: var(--offWhite);
+    height: 3.5rem;
+    overflow: auto;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    margin: 0;
+    padding-left: 0.5rem;
+
 }
 
 input::placeholder {
