@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/gift-tracker-app/static/css/main.a93ebad9.chunk.css",
-    "main.js": "/gift-tracker-app/static/js/main.62a93715.chunk.js",
-    "main.js.map": "/gift-tracker-app/static/js/main.62a93715.chunk.js.map",
+    "main.css": "/gift-tracker-app/static/css/main.59198fd1.chunk.css",
+    "main.js": "/gift-tracker-app/static/js/main.b9d802f3.chunk.js",
+    "main.js.map": "/gift-tracker-app/static/js/main.b9d802f3.chunk.js.map",
     "runtime-main.js": "/gift-tracker-app/static/js/runtime-main.d55ab437.js",
     "runtime-main.js.map": "/gift-tracker-app/static/js/runtime-main.d55ab437.js.map",
     "static/js/2.67e57358.chunk.js": "/gift-tracker-app/static/js/2.67e57358.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.618d1f74.chunk.js": "/gift-tracker-app/static/js/3.618d1f74.chunk.js",
     "static/js/3.618d1f74.chunk.js.map": "/gift-tracker-app/static/js/3.618d1f74.chunk.js.map",
     "index.html": "/gift-tracker-app/index.html",
-    "static/css/main.a93ebad9.chunk.css.map": "/gift-tracker-app/static/css/main.a93ebad9.chunk.css.map",
+    "static/css/main.59198fd1.chunk.css.map": "/gift-tracker-app/static/css/main.59198fd1.chunk.css.map",
     "static/js/2.67e57358.chunk.js.LICENSE.txt": "/gift-tracker-app/static/js/2.67e57358.chunk.js.LICENSE.txt",
     "static/media/index.css": "/gift-tracker-app/static/media/tick.2e30f8cb.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.d55ab437.js",
     "static/js/2.67e57358.chunk.js",
-    "static/css/main.a93ebad9.chunk.css",
-    "static/js/main.62a93715.chunk.js"
+    "static/css/main.59198fd1.chunk.css",
+    "static/js/main.b9d802f3.chunk.js"
   ]
 }
