@@ -103,6 +103,12 @@ button {
     background-color: var(--midGreen);
 }
 
+@media screen and (max-width: 768px) {
+    .tickButton {
+        margin-left: 1rem;
+    }
+}
+
 .crossButton {
     background-color: var(--red);
     background-image: url(../assets/cross.svg);
@@ -133,5 +139,7 @@ button {
     width: 2rem;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: auto;
+    
 }
