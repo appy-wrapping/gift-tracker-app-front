@@ -5,7 +5,7 @@ const Total = ({ priceSum, budget }) => {
 				className="footer"
 				style={priceSum > budget ? { color: "#CC5B3D" } : {}}
 			>
-				£{priceSum.toFixed(2)}
+				Total: £{priceSum.toFixed(2)}
 			</h2>
 		</>
 	);
