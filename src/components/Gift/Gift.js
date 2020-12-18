@@ -29,7 +29,12 @@ class Gift extends Component {
 	}
 
 	handlePrice(e) {
-		this.setState({ price: e.currentTarget.value });
+		this.setState({
+			price:
+				e.currentTarget.value < 0 || e.currentTarget.value === ""
+					? 0
+					: e.currentTarget.value,
+		});
 	}
 
 	handleBought() {
