@@ -4,6 +4,7 @@ import { Component } from "react";
 import Total from '../Total';
 import Giftcard from "../Giftcard";
 import Gift from "../Gift";
+import Budget from "../Budget";
 
 // const App = ({ gifts }) => (
 class App extends Component {
@@ -12,12 +13,14 @@ class App extends Component {
 		this.state = {
 			mobileView: window.innerWidth < 768,
 		}
+
 	}
 	componentDidMount() {
 		this.props.getGifts();
 		window.addEventListener("resize", () => {
 			this.setState({ mobileView: window.innerWidth < 768 })
 		})
+		this.props.getFriends();
 	}
 
 	render() {
@@ -36,14 +39,27 @@ class App extends Component {
 				</div>
 
 				<div className="cardHolder">
-					<Friend friendName={"bob"} />
+
+					{this.props.friendsLoaded ?
+						<Friend />
+
+						:
+						<p>Loading...</p>
+					}
+
+					{/* <h2 className="card budgetCard">"Budget Here"</h2> */}
 				</div>
 				<div className="stickyHeader">
-					<div className="budgetHolder">
-						<h2 className="card budgetCard">Budget: £0.00</h2>
-						<button className="button editButtonTwo" />
-					</div>
-					<Total />
+					{
+						this.props.friendsLoaded ?
+							<Budget /> : null
+					}
+
+					{
+						this.props.friendsLoaded ? <Total /> : null
+					}
+
+
 				</div>
 
 				<main className="main" >

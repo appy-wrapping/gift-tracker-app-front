@@ -5,6 +5,14 @@ const reducer = (state, action) => {
 				...state,
 				gifts: [...state.gifts, action.payload],
 			};
+
+		case "ADD_FRIEND":
+			return{
+				...state,
+				friends: [...state.friends, action.payload],
+				friendsLoaded: true
+			}
+			
 		case "REMOVE_GIFT":
 			return {
 				...state,
@@ -25,6 +33,22 @@ const reducer = (state, action) => {
 					}
 				}),
 			};
+			// console.log(action.payload);
+
+			case "EDIT_FRIEND":
+				return {
+					...state,
+					friends: state.friends.map((friend) => {
+						if (friend.id !== action.payload.id) {
+							return friend;
+						} else {
+							return {
+								...friend,
+								...action.payload,
+							};
+						}
+					}),
+				};
 
 		default:
 			return state;

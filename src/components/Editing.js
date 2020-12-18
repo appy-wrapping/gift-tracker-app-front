@@ -31,6 +31,7 @@ const Editing = ({
 			type="checkbox"
 			checkbox={true}
 			handleChange={handleBought}
+			bought={bought}
 		/>
 	</>
 );
