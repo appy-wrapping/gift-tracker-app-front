@@ -12,6 +12,7 @@ class App extends Component {
 	// }
 	componentDidMount() {
 		this.props.getGifts();
+		this.props.getFriends();
 	}
 
 	render() {
@@ -22,9 +23,15 @@ class App extends Component {
 				</nav>
 
 				<div className="cardHolder">
-					<Friend friendName={"bob"} />
 
-					<h2 className="card budgetCard">"Budget Here"</h2>
+					{this.props.friendsLoaded ? 
+					<Friend />
+
+					:
+						<p>Loading...</p>
+					}
+
+					{/* <h2 className="card budgetCard">"Budget Here"</h2> */}
 				</div>
 
 				<article className="table">

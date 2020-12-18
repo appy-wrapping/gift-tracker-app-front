@@ -5,6 +5,13 @@ button {
     width: 2.5rem;
 }
 
+@media screen and (max-width: 768px) {
+    button {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+}
+
 .editButton {
     background-color: var(--yellow);
     background-image: url(../assets/pencil.svg);

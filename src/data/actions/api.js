@@ -1,4 +1,4 @@
-import { removeGift, addGift, editGift } from "./state";
+import { removeGift, addGift, editGift, editFriend, addFriend } from "./state";
 import axios from "../../axios";
 
 export const getGifts = () => {
@@ -10,9 +10,26 @@ export const getGifts = () => {
 						id: gift.id,
 						item_name: gift.item_name,
 						price: gift.price,
-						bought: false,
+						bought: gift.bought,
 						total: 0.0,
 						friend_id: 1,
+					})
+				);
+			});
+		});
+	};
+};
+
+
+export const getFriends = () => {
+	return (dispatch) => {
+		axios.get("friends").then(({ data }) => {
+			data.data.forEach((friend) => {
+				dispatch(
+					addFriend({
+						id: friend.id,
+						name: friend.name,
+						budget: friend.budget,
 					})
 				);
 			});
@@ -62,6 +79,27 @@ export const patchGift = ({ item_name, price, bought, id }) => {
 						item_name: data.item_name,
 						price: data.price,
 						bought: data.bought,
+						id: data.id
+					})
+				);
+			});
+	};
+};
+
+
+export const patchFriend = ({ name, budget, id }) => {
+	return (dispatch) => {
+		axios
+			.patch(`friends/${id}`, {
+				name: name,
+				budget: budget
+			})
+			.then(({ data }) => {
+				dispatch(
+					editFriend({
+						name: data.name,
+						budget: data.budget,
+						id: data.id,
 					})
 				);
 			});
