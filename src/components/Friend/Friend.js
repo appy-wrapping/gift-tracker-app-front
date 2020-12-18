@@ -55,7 +55,7 @@ class Friend extends Component {
 
 
 	render() {
-		let { name, budget } = this.state;
+		let { name } = this.state;
 
 		return (
 			<>

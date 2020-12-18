@@ -1,8 +1,5 @@
 import { Component } from "react";
 
-import Row from "../Row";
-import Editing from "../Editing";
-
 class Giftcard extends Component {
 	constructor(props) {
 		super(props);
