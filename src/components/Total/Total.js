@@ -1,8 +1,8 @@
-const Total = ({priceSum}) => {
+const Total = ({priceSum, budget}) => {
 
     return (
         <>
-            <h2 className="footer">£{priceSum.toFixed(2)}</h2>
+            <h2 className="footer" style={(priceSum > budget ? {color:"red"} : {})}>£{priceSum.toFixed(2)}</h2>
         </>
     );
 
