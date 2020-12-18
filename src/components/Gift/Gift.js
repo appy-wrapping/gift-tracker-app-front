@@ -1,5 +1,4 @@
 import { Component } from "react";
-
 import Row from "../Row";
 import Editing from "../Editing";
 

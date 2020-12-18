@@ -25,6 +25,7 @@ class App extends Component {
 
 	render() {
 		return (
+
 			<section>
 				<nav>
 					<h1 className="header">Gift Tracker</h1>

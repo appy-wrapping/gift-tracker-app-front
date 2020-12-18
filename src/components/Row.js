@@ -1,5 +1,3 @@
-// import react from "react";
-// import Inputs from "./Inputs";
 
 const Row = ({ item_name, price, bought, editing, handleClick }) => (
 	<>

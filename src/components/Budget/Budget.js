@@ -10,36 +10,35 @@ const Budget = ({ id, name, propBudget, editFriend }) => {
             editFriend({
                 id: id,
                 name: name,
-                budget: budget
+                budget: budget,
             });
         }
-        setEditingBudget(
-            !editingBudget
-        )
-    }
+        setEditingBudget(!editingBudget);
+    };
 
     const handleBudget = (e) => {
-        setBudget(
-            e.currentTarget.value
-        )
-    }
+        setBudget(e.currentTarget.value);
+    };
 
     return (
         <>
-            {editingBudget ?
+            {editingBudget ? (
                 <div className="budgetHolder">
-                    <input type="number"
+                    <input
+                        type="number"
                         onChange={handleBudget}
-                        className="card budgetCard"
-                        value={`${budget}`} />
+                        className="card budgetCard editing"
+                        value={`${budget}`}
+                    />
 
                     <button className={!editingBudget ? "button editButtonTwo" : "button saveButtonTwo"} id="pencil" onClick={handleEditingBudget}></button>
                 </div>
-                :
-                <div className="budgetHolder">
-                    <h2 className="card budgetCard">Budget: £{budget}</h2>
-                    <button className="button editButtonTwo" id="pencil" onClick={handleEditingBudget}></button>
-                </div>
+            ) : (
+                    <div className="budgetHolder">
+                        <h2 className="card budgetCard">Budget: £{budget}</h2>
+                        <button className="button editButtonTwo" id="pencil" onClick={handleEditingBudget}></button>
+                    </div>
+                )
             }
         </>
     )
