@@ -1,7 +1,7 @@
 .table {
     background-color: var(--lightBlue);
     padding: 2rem;
-    
+
 }
 
 /* @media screen and (max-width: 768px) {
@@ -69,6 +69,7 @@ th {
 table {
     background-color: var(--lightBlue);
     border-spacing: 0;
+    width: 100%;
 }
 
 

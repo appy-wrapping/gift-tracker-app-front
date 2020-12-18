@@ -32,7 +32,7 @@ button {
 }
 
 .editButtonTwo:hover {
-    background-color: var(--darkBlue);
+    background-color: var(--darkestBlue);
     background-image: url(../assets/pencil.svg);
     vertical-align: middle;
 }
@@ -71,6 +71,16 @@ button {
 
 .addButton:hover {
     background-color: var(--midGreen);
+}
+
+.addButtonTwo {
+    background-color: var(--darkBlue);
+    background-image: url(../assets/plus.svg);
+    vertical-align: middle;
+}
+
+.addButtonTwo:hover {
+    background-color: var(--darkestBlue);
 }
 
 .tickButton {

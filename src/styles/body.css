@@ -13,3 +13,26 @@ section {
         margin-right: 1rem;
     }
 }
+
+.main {
+    position: relative;
+}
+
+.stickyHeader {
+    display: flex;
+    z-index: 2;
+    position: sticky;
+    top: 0;
+}
+
+@media screen and (max-width: 400px) {
+    .stickyHeader {
+        flex-direction: column;
+    }
+
+    .stickyHeader h2.footer {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+}

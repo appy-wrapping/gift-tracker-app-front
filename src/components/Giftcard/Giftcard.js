@@ -67,19 +67,19 @@ class Giftcard extends Component {
 
 				<h2 className="giftcard">Description</h2>
 				{ this.state.editing
-					? <input onChange={this.handleGiftName} value={item_name} />
+					? <input onChange={this.handleGiftName} value={item_name} className="giftcardText" />
 					: <p className="giftcardText">{item_name}</p>
 				}
 
 				<h2 className="giftcard">Price</h2>
 				{ this.state.editing
-					? <input onChange={this.handlePrice} value={price} />
+					? <input onChange={this.handlePrice} value={price} className="giftcardText" />
 					: <p className="giftcardText">{`£${price}`}</p>
 				}
 
 				<footer className="giftcardFooter">
 					<button
-						className="tableButtons deleteButton"
+						className="button deleteButton"
 						onClick={this.handleDelete}
 					/>
 
@@ -87,7 +87,7 @@ class Giftcard extends Component {
 						onClick={this.handleEditing}
 						className={
 							!this.state.editing
-								? "tableButtons editButton"
+								? "button editButton"
 								: "button saveButton"
 						}
 					/>

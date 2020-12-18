@@ -37,55 +37,62 @@ class App extends Component {
 
 				<div className="cardHolder">
 					<Friend friendName={"bob"} />
-
+				</div>
+				<div className="stickyHeader">
 					<div className="budgetHolder">
 						<h2 className="card budgetCard">Budget: £0.00</h2>
 						<button className="button editButtonTwo" />
 					</div>
+					<Total />
 				</div>
 
-				{ this.state.mobileView ?
-					<div>
+				<main className="main" >
 
-						{this.props.gifts.map((gift) => (
-							<Giftcard gift={gift} key={gift.id} />
-						))}
-						<Add />
+					{this.state.mobileView ?
+						<div>
+
+							{this.props.gifts.map((gift) => (
+								<Giftcard gift={gift} key={gift.id} />
+							))}
+							<Add />
 
 
-					</div>
-					:
-					<article className="table">
-						<table>
-							<thead>
-								<tr>
-									<th className="tdNarrow"></th>
-									<th className="tdNarrow"></th>
-									<th>
-										<h3>Description</h3>
-									</th>
-									<th>
-										<h3>Price</h3>
-									</th>
-									<th>
-										<h3>Bought?</h3>
-									</th>
-								</tr>
-							</thead>
+						</div>
+						:
+						<article className="table">
+							<table>
+								<thead>
+									<tr>
+										<th className="tdNarrow"></th>
+										<th className="tdNarrow"></th>
+										<th>
+											<h3>Description</h3>
+										</th>
+										<th>
+											<h3>Price</h3>
+										</th>
+										<th>
+											<h3>Bought?</h3>
+										</th>
+									</tr>
+								</thead>
 
-							{/* Stick a row component here */}
-							<tbody>
-								{this.props.gifts.map((gift) => (
-									<Gift gift={gift} key={gift.id} />
-								))}
-								<Add />
-							</tbody>
-						</table>
-					</article>
-				}
+								{/* Stick a row component here */}
+								<tbody>
+									{this.props.gifts.map((gift) => (
+										<Gift gift={gift} key={gift.id} />
+									))}
+									<Add />
+								</tbody>
+							</table>
+						</article>
+					}
 
-				{/* <h2 className="footer">Total Goes Here</h2> */}
-				<Total />
+
+					{/* <h2 className="footer">Total Goes Here</h2> */}
+
+
+				</main>
 			</section>
 		);
 	}
