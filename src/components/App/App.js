@@ -63,7 +63,12 @@ class App extends Component {
 				</article>
 
 				{/* <h2 className="footer">Total Goes Here</h2> */}
-				<Total />
+				{this.props.friendsLoaded ? 
+					<Total />
+
+					:
+						<p>Loading...</p>
+					}
 			</section>
 		);
 	}
