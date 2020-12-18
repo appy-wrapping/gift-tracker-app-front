@@ -1,38 +1,37 @@
 :root {
-    background-color: var(--offWhite);
+	background-color: var(--offWhite);
 }
 
 section {
-    margin-left: 2rem;
-    margin-right: 2rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
 }
 
 @media screen and (max-width: 768px) {
-    section {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
+	section {
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
 }
 
 .main {
-    position: relative;
+	position: relative;
 }
 
 .stickyHeader {
-    display: flex;
-    z-index: 2;
-    position: sticky;
-    top: 0;
+	display: flex;
+	z-index: 2;
+	position: sticky;
+	top: 0;
 }
 
 @media screen and (max-width: 400px) {
-    .stickyHeader {
-        flex-direction: column;
-    }
+	.stickyHeader {
+		flex-direction: column;
+	}
 
-    .stickyHeader h2.footer {
-        width: 100%;
-        box-sizing: border-box;
-    }
-
+	.stickyHeader h2.footer {
+		width: 100%;
+		box-sizing: border-box;
+	}
 }

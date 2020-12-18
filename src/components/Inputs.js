@@ -2,7 +2,7 @@ const Inputs = ({ handleChange, value, type, bought, placeholder }) =>
 	type === "text" ? (
 		<td className="tableInputs">
 			<input
-				className="tableTextInput"
+				className="tableTextInput editing"
 				type="text"
 				value={value}
 				onChange={handleChange}
@@ -12,7 +12,7 @@ const Inputs = ({ handleChange, value, type, bought, placeholder }) =>
 	) : type === "number" ? (
 		<td className="tableInputs">
 			<input
-				className="tableTextInput"
+				className="tableTextInput editing"
 				type="number"
 				value={value}
 				onChange={handleChange}
