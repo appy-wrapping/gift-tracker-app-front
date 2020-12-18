@@ -14,6 +14,7 @@ const mapStateToProps = (state) => {
 
     return {
         priceSum: priceSum,
+        budget: state.friends[0].budget,
     };
 };
 
