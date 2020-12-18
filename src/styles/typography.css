@@ -23,25 +23,26 @@ h2 {
     font-weight: 500;
     font-size: 2rem;
     color: var(--darkBlue);
-    margin-top: 0;
-    margin-bottom: 1rem;
-
+    /* margin-top: 0; */
+    /* margin-bottom: 1rem; */
+    
 }
 
 h2.footer {
     background-color: var(--midBlue);
     margin: 0;
     margin-bottom: 1rem;
-    /* padding: 2rem; */
+    padding: 2rem;
     text-align: center;
-    /* width: 95%; */
+    width: 50%;
+
 }
 
-/* @media screen and (max-width: 768px) {
-    h2.footer {
-        width: 80%;
-    }
-} */
+h2.giftcard {
+    padding: 0.5rem;
+    padding-bottom: 0;
+    
+}
 
 h3 {
     font-family: 'Oswald', sans-serif;
@@ -66,4 +67,10 @@ input {
 input::placeholder {
     color: rgb(175, 175, 175);
     font-style: italic;
+}
+
+.introText {
+    line-height: 2rem;
+    text-align: center;
+    padding-bottom: 4rem;
 }

@@ -1,0 +1,40 @@
+.giftcardHeader {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.giftcardFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.giftcard {
+    margin-bottom: 1rem;
+    background-color: var(--lightBlue);
+    padding: 1rem;
+}
+
+.giftcardText {
+    background-color: var(--offWhite);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 3rem;
+    overflow: auto;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+}
+
+@media screen and (max-width: 768px) {
+    .giftcardText {
+        height: 5rem;
+        font-size:calc(16px + 1.5vw);
+    }
+}
