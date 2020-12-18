@@ -16,7 +16,7 @@ class Friend extends Component {
 		this.handleName = this.handleName.bind(this);
 		this.handleBudget = this.handleBudget.bind(this);
 		this.handleEditingName = this.handleEditingName.bind(this);
-		this.handleEditingBudget= this.handleEditingBudget.bind(this)
+		this.handleEditingBudget = this.handleEditingBudget.bind(this)
 	}
 
 	handleName(e) {
@@ -59,32 +59,22 @@ class Friend extends Component {
 
 		return (
 			<>
-			{this.state.editingName ?
-			//something
-				<>
-					<input onChange={ this.handleName } className="card friendCard" placeholder={ name } />
-					<button id="pencil" onClick = {this.handleEditingName}></button>
-				</>
-				
-				:
-				//soemthing else
-				<>
-					<h2 className="card friendCard">{ name }</h2>
-					<button id="pencil" onClick = {this.handleEditingName}></button>
-				</>
+				{this.state.editingName ?
+					//something
+					<div className="friendHolder">
+						<input onChange={this.handleName} className="card friendCard" placeholder={name} />
+						<button className="button editButtonTwo" id="pencil" onClick={this.handleEditingName}></button>
+					</div>
+
+					:
+					//soemthing else
+					<div className="friendHolder">
+						<h2 className="card friendCard">{name}</h2>
+						<button className="button editButtonTwo" id="pencil" onClick={this.handleEditingName}></button>
+					</div>
 				}
 
-				{this.state.editingBudget ?
-				<>
-					<input type="number" onChange={ this.handleBudget } className="card budgetCard" value={`${budget}`}></input>
-					<button id="pencil" onClick = {this.handleEditingBudget}></button>
-				</>	
-				:
-				<>
-					<h2 className="card budgetCard">£{ budget}</h2>
-					<button id="pencil" onClick = {this.handleEditingBudget}></button>
-				</>
-				}
+
 			</>
 
 		);

@@ -39,7 +39,7 @@ class Add extends Component {
 
 		return (
 			<>
-				<tr>
+				<tr className="tableRow">
 					<td></td>
 					<td>
 						<button

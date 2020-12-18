@@ -3,12 +3,13 @@ button {
     border-radius: 50%;
     height: 2.5rem;
     width: 2.5rem;
+    vertical-align: middle;
 }
 
 @media screen and (max-width: 768px) {
     button {
-        height: 1.5rem;
-        width: 1.5rem;
+        height: 4rem;
+        width: 4rem;
     }
 }
 
@@ -20,6 +21,26 @@ button {
 
 .editButton:hover {
     background-color: var(--midYellow);
+}
+
+.editButtonTwo {
+    background-color: var(--darkBlue);
+    background-image: url(../assets/pencil.svg);
+    vertical-align: middle;
+    fill: var(--green);
+    padding-right: 2rem;
+}
+
+.editButtonTwo:hover {
+    background-color: var(--darkestBlue);
+    background-image: url(../assets/pencil.svg);
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 768px) {
+    .editButtonTwo {
+        margin: auto;
+    }
 }
 
 .saveButton {
@@ -52,6 +73,16 @@ button {
     background-color: var(--midGreen);
 }
 
+.addButtonTwo {
+    background-color: var(--darkBlue);
+    background-image: url(../assets/plus.svg);
+    vertical-align: middle;
+}
+
+.addButtonTwo:hover {
+    background-color: var(--darkestBlue);
+}
+
 .tickButton {
     background-color: var(--green);
     background-image: url(../assets/tick.svg);
@@ -68,6 +99,12 @@ button {
     vertical-align: middle;
 }
 
+@media screen and (max-width: 768px) {
+    .crossButton {
+        margin-left: 1rem;
+    }
+}
+
 .crossButton:hover {
     background-color: var(--midRed);
 }
@@ -78,4 +115,13 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.arrow {
+    background-image: url(../assets/downArrow2.svg);
+    height: 1.5rem;
+    width: 1.5rem;
+    display: flex;
+    justify-content: center;
+    margin: auto;
 }

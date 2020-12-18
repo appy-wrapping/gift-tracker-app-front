@@ -13,6 +13,8 @@ code {
     monospace;
 }
 
+@import "styles/reset.css";
+
 @import "styles/colours.css";
 
 @import "styles/typography.css";
@@ -24,3 +26,5 @@ code {
 @import "styles/table.css";
 
 @import "styles/cards.css";
+
+@import "styles/giftcard.css";

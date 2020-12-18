@@ -1,22 +1,23 @@
 .table {
     background-color: var(--lightBlue);
-    /* padding: 2rem; */
-    /* width: 100%; */
+    padding: 2rem;
+
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .table {
         padding: 1rem;
-        /* width: 80%; */
+        width: 80%;
     }
-}
+} */
 
 td {
     height: 6rem;
+    vertical-align: middle;
 }
 
-td.tableInputs {
-    background-color: white;
+.tableInputs {
+    background-color: var(--offWhite);
     border-top: 2px solid var(--lightBlue);
     border-bottom: 2px solid var(--lightBlue);
     text-align: center;
@@ -31,7 +32,7 @@ td.tableInputs:last-of-type {
 }
 
 .tableTextInput {
-    background-color: white;
+    background-color: var(--offWhite);
     border: none;
     text-align: center;
     height: 4rem;
@@ -54,7 +55,7 @@ td.tableInputs:last-of-type {
 .tableRow {
     border-left: 2rem solid var(--lightBlue);
     border-right: 2rem solid var(--lightBlue);
-    width: 100%;
+    /* width: 100%; */
 }
 
 .tableRow:last-of-type {
@@ -68,6 +69,7 @@ th {
 table {
     background-color: var(--lightBlue);
     border-spacing: 0;
+    width: 100%;
 }
 
 
