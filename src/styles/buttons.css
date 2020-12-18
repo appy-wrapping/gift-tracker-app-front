@@ -87,6 +87,7 @@ button {
     background-color: var(--darkBlue);
     background-image: url(../assets/save.svg);
     vertical-align: middle;
+    margin-left: 2rem;
 }
 
 .saveButtonTwo:hover {

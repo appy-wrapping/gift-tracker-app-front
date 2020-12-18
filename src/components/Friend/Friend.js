@@ -63,7 +63,7 @@ class Friend extends Component {
 					//something
 					<div className="friendHolder">
 						<input onChange={this.handleName} className="card friendCard" placeholder={name} />
-						<button className="button editButtonTwo" id="pencil" onClick={this.handleEditingName}></button>
+						<button className={!this.state.editingName ? "button editButtonTwo" : "button saveButtonTwo"} id="pencil" onClick={this.handleEditingName}></button>
 					</div>
 
 					:
