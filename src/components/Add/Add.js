@@ -21,7 +21,9 @@ class Add extends Component {
 	}
 
 	handlePrice(e) {
-		this.setState({ price: e.currentTarget.value });
+		this.setState({
+			price: e.currentTarget.value < 0 ? 0 : e.currentTarget.value,
+		});
 	}
 
 	handleAdd() {
@@ -29,6 +31,7 @@ class Add extends Component {
 			item_name: this.state.item_name,
 			price: this.state.price,
 		});
+
 		this.setState({ item_name: "", price: 0 });
 	}
 	render() {
