@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/gift-tracker-app/static/css/main.a93ebad9.chunk.css",
-    "main.js": "/gift-tracker-app/static/js/main.3fa63361.chunk.js",
-    "main.js.map": "/gift-tracker-app/static/js/main.3fa63361.chunk.js.map",
+    "main.js": "/gift-tracker-app/static/js/main.62a93715.chunk.js",
+    "main.js.map": "/gift-tracker-app/static/js/main.62a93715.chunk.js.map",
     "runtime-main.js": "/gift-tracker-app/static/js/runtime-main.d55ab437.js",
     "runtime-main.js.map": "/gift-tracker-app/static/js/runtime-main.d55ab437.js.map",
     "static/js/2.67e57358.chunk.js": "/gift-tracker-app/static/js/2.67e57358.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.d55ab437.js",
     "static/js/2.67e57358.chunk.js",
     "static/css/main.a93ebad9.chunk.css",
-    "static/js/main.3fa63361.chunk.js"
+    "static/js/main.62a93715.chunk.js"
   ]
 }
